@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Mr. X",
+    "position": "Developer",
+    "avatar": "https://www.masterclass.com/course-images/attachments/rBJAtj5pz7vfNYdcbNsjkHeE?width=350&height=263&fit=cover&dpr=2",
+    "coverimg": "https://seeklogo.com/images/C/Coca-Cola-logo-108E6559A3-seeklogo.com.png",
+    "message": "St. Augustine College Now Offers A Fully Online English Language Program. Learn more today.St. Augustine College Now Offers A Fully Online English Language Program. Learn more today."
+  },
+  {
+    "name": "Mr. Y",
+    "position": "SWE",
+    "avatar": "https://www.masterclass.com/course-images/attachments/rBJAtj5pz7vfNYdcbNsjkHeE?width=350&height=263&fit=cover&dpr=2",
+    "coverimg": "https://seeklogo.com/images/C/Coca-Cola-logo-108E6559A3-seeklogo.com.png",
+    "message": "St. Augustine College Now Offers A Fully Online English Language Program. Learn more today.St. Augustine College Now Offers A Fully Online English Language Program. Learn more today."
+  },
+  {
+    "name": "Mr. Z",
+    "position": "UI/UX",
+    "avatar": "https://www.masterclass.com/course-images/attachments/rBJAtj5pz7vfNYdcbNsjkHeE?width=350&height=263&fit=cover&dpr=2",
+    "coverimg": "https://seeklogo.com/images/C/Coca-Cola-logo-108E6559A3-seeklogo.com.png",
+    "message": "St. Augustine College Now Offers A Fully Online English Language Program. Learn more today.St. Augustine College Now Offers A Fully Online English Language Program. Learn more today."
+  }
+]

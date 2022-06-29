@@ -1,0 +1,47 @@
+import React from "react";
+
+const Header = () => {
+  return (
+    // <div className="page-width mx-auto pl-6 md:ml-20 xl:ml-32 2xl:ml-96 flex justify-end items-center mb-20">
+    <div className="relative flex justify-end items-center mb-36">
+      {/* Content */}
+      <div className="header-width mx-auto py-20">
+        {/* <div className="w-10/12 mx-auto"> */}
+        <div className="w-6/12 mr-auto">
+          <div>
+            <h1 className="text-heading font-bold font-abhaya">
+              Brand Promoter and Creator are both in the same place
+            </h1>
+          </div>
+          <div>
+            <h4 className="font-mulish font-light pr-16 mt-8">
+              Warning Importing demo data will replace your current theme
+              options, content and widget settings. Importing data is
+              recommended on fresh installs only.
+            </h4>
+          </div>
+          <div className="mt-8 font-mulish">
+            <button className="px-8 py-2.5 rounded-full cursor-pointer border-black border mr-6">
+              Brand & Agencie
+            </button>
+            <button className="px-14 py-2.5 rounded-full cursor-pointer  border-black border">
+              Creator
+            </button>
+          </div>
+        </div>
+        <div className="w-1/2"></div>
+        {/* </div> */}
+      </div>
+      {/* Banner */}
+      <div className="absolute right-0 top-0 rounded-tl-3xl rounded-bl-3xl">
+        <img
+          className="header-banner rounded-tl-3xl rounded-bl-3xl"
+          src="https://imageio.forbes.com/specials-images/imageserve/5fd3b760a0e32d1889e1d1a3/0x0.jpg?format=jpg&width=1200"
+          alt="Banner"
+        />
+      </div>
+    </div>
+  );
+};
+
+export default Header;

@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+.font-pacifico {
+  font-family: "Pacifico", cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.font-abhaya {
+  font-family: "Abhaya Libre", serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.font-mulish {
+  font-family: "Mulish", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.page-width {
+  width: 78.75rem;
 }
 
-.App-link {
-  color: #61dafb;
+.header-width {
+  width: 67rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-banner {
+  height: 60vh;
+  width: 45vw;
+}
+
+.btn-grad {
+  background-image: linear-gradient(84.75deg, #0074d1 0%, #d100d1 100%);
+  -webkit-transition: background-image 2s ease-out;
+  -moz-transition: background-image 2s ease-out;
+  -o-transition: background-image 2s ease-out;
+  transition: background-image 2s ease-out;
+  z-index: 1;
+}
+
+.btn-grad-reverse {
+  background-image: linear-gradient(84.75deg, #d100d1 0%, #0074d1 100%);
+}
+
+.demand-marketing-img {
+  height: 25rem;
+  width: 25rem;
+}
+
+.tutorial {
+  height: 25rem;
+  width: 53rem;
+}
+
+.studio-img {
+  height: 28.2rem;
+  width: 31.1rem;
+}
+
+/* Slick Carousel */
+
+.slick-prev {
+  position: absolute !important;
+  top: 110% !important;
+  left: 45% !important;
+  z-index: 999;
+}
+
+.slick-next {
+  position: absolute !important;
+  top: 110% !important;
+  right: 48% !important;
+  z-index: 999 !important;
+}
+
+.slick-prev:before {
+  font-family: "slick";
+  content: url("./assets/Icons/arrow-left.svg") !important;
+  /* color: black !important; */
+  padding: 7px 4px 7px 10px;
+  margin: auto !important;
+  opacity: 100%;
+  border-radius: 100%;
+  background-color: rgb(204, 203, 202) !important;
+  line-height: 10 !important;
+}
+
+.slick-next:before {
+  font-family: "slick";
+  content: url("./assets/Icons/arrow-right.svg") !important;
+  /* color: black !important; */
+  padding: 7px 4px 7px 10px;
+  margin: auto !important;
+  opacity: 100%;
+  border-radius: 100%;
+  background-color: rgb(204, 203, 202) !important;
+  line-height: 10 !important;
+}
+
+.slick-prev:hover::before {
+  content: url("./assets/Icons/arrow-left-white.svg") !important;
+  background-color: #151d48 !important;
+}
+
+.slick-next:hover::before {
+  content: url("./assets/Icons/arrow-right-white.svg") !important;
+  background-color: #151d48 !important;
+}
+
+.slick-dots {
+  display: none !important;
 }
