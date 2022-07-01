@@ -5,13 +5,15 @@ import ScrollToTop from "./Components/Shared/ScrollToTop";
 import Login from "./Pages/Login";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Signup from "./Pages/Signup";
 
 function App() {
   return (
-    <div>
+    <div className="bg-white">
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="login" element={<Login />} />
+        <Route path="signup" element={<Signup />} />
       </Routes>
       <ScrollToTop />
     </div>

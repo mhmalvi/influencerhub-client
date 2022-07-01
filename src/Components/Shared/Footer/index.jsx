@@ -15,7 +15,7 @@ const Footer = () => {
             </div>
             <div className="w-68 flex justify-center items-center">
               <input
-                className="w-full border-black border-b py-3"
+                className="w-full border-gray-300 border-b py-3.5"
                 type="email"
                 name=""
                 placeholder="ahsanhabib@gmail.com"

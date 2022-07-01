@@ -104,7 +104,7 @@
   display: none !important;
 }
 
-.slick-dots li button::before {
+#loginsection > .slick-dots li button::before {
   color: white !important;
   opacity: 1 !important;
   content: url("./assets/Icons/carousel-btn.svg") !important;
@@ -112,7 +112,7 @@
   /* margin:0 30px important; */
 }
 
-.slick-dots li.slick-active button:before {
+#loginsection > .slick-dots li.slick-active button:before {
   color: white !important;
   background-color: white !important;
   padding: 0 20px;
@@ -121,11 +121,17 @@
   margin-top: 2px;
 }
 
-.slick-dots {
+#loginsection > .slick-dots {
   bottom: 25px !important;
   left: 0px !important;
   width: 30% !important;
   display: flex !important;
   justify-content: space-between;
   align-items: center;
+}
+
+/* For Login Page */
+.login-banner {
+  width: 33.2rem;
+  height: 38.75rem;
 }

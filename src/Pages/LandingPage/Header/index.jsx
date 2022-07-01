@@ -14,13 +14,13 @@ const Header = () => {
             </h1>
           </div>
           <div>
-            <h4 className="font-mulish font-light pr-16 mt-8">
+            <h4 className="font-mulish font-light pr-16 mt-5">
               Warning Importing demo data will replace your current theme
               options, content and widget settings. Importing data is
               recommended on fresh installs only.
             </h4>
           </div>
-          <div className="mt-8 font-mulish">
+          <div className="mt-9 font-mulish">
             <button className="px-8 py-2.5 rounded-full cursor-pointer border-black border mr-6">
               Brand & Agencie
             </button>

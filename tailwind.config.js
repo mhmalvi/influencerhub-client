@@ -13,6 +13,7 @@ module.exports = {
         38: "9.4rem",
         50: "12.5rem",
         68: "18rem",
+        82: "20.5rem",
       },
       height: {
         22: "5.5rem",
@@ -23,9 +24,16 @@ module.exports = {
       inset: {
         84: "22rem",
       },
-
+      padding: {
+        13: "3.125rem",
+        18: "4.5rem",
+        21: "5.5rem",
+        30: "7.5rem",
+      },
       colors: {
         "dark-blue": "#151D48",
+        "milky-white": "#F5F5F5",
+        // "light-gray": "#F5F5F5",
       },
     },
   },
