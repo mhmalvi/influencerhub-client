@@ -16,7 +16,7 @@ const Companies = () => {
     grabLogo,
   ];
   return (
-    <div className="page-width mx-auto py-20">
+    <div className="page-width mx-auto pt-32 pb-20">
       <div className="w-8/12 mx-auto">
         <div>
           <h1 className="text-heading font-bold font-abhaya text-center mb-12">

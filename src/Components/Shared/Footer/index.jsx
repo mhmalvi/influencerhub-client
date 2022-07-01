@@ -21,12 +21,11 @@ const Footer = () => {
                 placeholder="ahsanhabib@gmail.com"
                 id=""
               />
-              <button className="px-5 py-3.5 bg-gray-300 rounded-tl-lg rounded-tr-xl text-xl font-bold">
-                {">"}
+              <button className="p-4 bg-gray-300 rounded-tl-lg rounded-tr-xl text-xl font-bold">
+                <Icons.RightArrow />
               </button>
             </div>
           </div>
-
           <div className="mt-5 mx-auto font-mulish">
             <h4 className="text-black font-semibold mb-6">Services</h4>
             <div className="grid grid-cols-4 md:grid-cols-1  gap-6 float-left">
@@ -81,15 +80,15 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="-mr-16 flex justify-end items-center mt-10">
+        <div className="-mr-16 2xl:-mr-20 flex justify-end items-center mt-10">
           <div>
-            <Icons.Facebook />
+            <Icons.Facebook className="cursor-pointer" />
           </div>
           <div>
-            <Icons.Instagram className="mx-10" />
+            <Icons.Instagram className="mx-6 cursor-pointer" />
           </div>
           <div>
-            <Icons.Twiteter />
+            <Icons.Twiteter className="cursor-pointer" />
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const FeedBack = ({ feedback }) => {
   return (
-    <div className="mx-auto">
+    <div className="mx-auto px-1">
       <div className="flex justify-center items-center max-w-md">
         <div className="relative w-44">
           <div>

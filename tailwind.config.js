@@ -20,6 +20,9 @@ module.exports = {
         39: "9.5rem",
         50: "12.5rem",
       },
+      inset: {
+        84: "22rem",
+      },
     },
   },
   plugins: [],
