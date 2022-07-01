@@ -53,24 +53,23 @@
 
 /* Slick Carousel */
 
-.slick-prev {
+#feedback > .slick-prev {
   position: absolute !important;
   top: 110% !important;
   left: 45% !important;
   z-index: 999;
 }
 
-.slick-next {
+#feedback > .slick-next {
   position: absolute !important;
   top: 110% !important;
   right: 48% !important;
   z-index: 999 !important;
 }
 
-.slick-prev:before {
+#feedback > .slick-prev:before {
   font-family: "slick";
   content: url("./assets/Icons/arrow-left.svg") !important;
-  /* color: black !important; */
   padding: 7px 4px 7px 10px;
   margin: auto !important;
   opacity: 100%;
@@ -79,7 +78,7 @@
   line-height: 10 !important;
 }
 
-.slick-next:before {
+#feedback > .slick-next:before {
   font-family: "slick";
   content: url("./assets/Icons/arrow-right.svg") !important;
   /* color: black !important; */
@@ -91,16 +90,42 @@
   line-height: 10 !important;
 }
 
-.slick-prev:hover::before {
+#feedback > .slick-prev:hover::before {
   content: url("./assets/Icons/arrow-left-white.svg") !important;
   background-color: #151d48 !important;
 }
 
-.slick-next:hover::before {
+#feedback > .slick-next:hover::before {
   content: url("./assets/Icons/arrow-right-white.svg") !important;
   background-color: #151d48 !important;
 }
 
-.slick-dots {
+#feedback > .slick-dots {
   display: none !important;
+}
+
+.slick-dots li button::before {
+  color: white !important;
+  opacity: 1 !important;
+  content: url("./assets/Icons/carousel-btn.svg") !important;
+  /* margin: 0 auto; */
+  /* margin:0 30px important; */
+}
+
+.slick-dots li.slick-active button:before {
+  color: white !important;
+  background-color: white !important;
+  padding: 0 20px;
+  height: 13px;
+  border-radius: 500px;
+  margin-top: 2px;
+}
+
+.slick-dots {
+  bottom: 25px !important;
+  left: 0px !important;
+  width: 30% !important;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
 }

@@ -23,6 +23,10 @@ module.exports = {
       inset: {
         84: "22rem",
       },
+
+      colors: {
+        "dark-blue": "#151D48",
+      },
     },
   },
   plugins: [],

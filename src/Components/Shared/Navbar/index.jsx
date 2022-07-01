@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [toggleSignup, setToggleSignup] = useState(false);
@@ -20,7 +21,9 @@ const Navbar = () => {
               <div className="cursor-pointer">About</div>
             </div>
             <div className="flex justify-center items-center">
-              <button className="mr-5 cursor-pointer">Login</button>
+              <Link to={"/login"} className="mr-5 cursor-pointer">
+                Login
+              </Link>
               <button
                 className={`${
                   toggleSignup ? "btn-grad" : "btn-grad-reverse"
