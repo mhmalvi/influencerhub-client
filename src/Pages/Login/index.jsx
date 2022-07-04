@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import loginBg from "../../assets/Images/loginBg.png";
-import modelData from "./modelData.json";
+import carouselData from "./carouselData.json";
 import google from "../../assets/Images/google-logo.png";
 import facebook from "../../assets/Images/facebook-logo.png";
 
@@ -20,7 +20,9 @@ const Login = () => {
     <div className="min-h-screen page-width px-30 mx-auto">
       <div className="flex justify-between items-center">
         <div className="login-form pt-18">
-          <div className="font-pacifico text-2xl cursor-pointer pb-8">LOGO</div>
+          <div className="font-pacifico text-2xl cursor-pointer pb-8">
+            <Link to={"/"}>LOGO</Link>
+          </div>
           <div className=" pl-21">
             <div className="flex mb-5">
               <h4 className="text-2xl font-bold font-abhaya">
@@ -83,7 +85,7 @@ const Login = () => {
             </form>
 
             {/* Google Signin process*/}
-            <div className="px-2 mx-auto mt-4">
+            <div className="mx-auto mt-4">
               <p className="text-gray-400 mb-3 font-mulish">Sing-in with </p>
               <div className="flex justify-center items-center">
                 <button className="w-full py-2 text-black font-semibold mx-auto text-xl bg-white rounded-lg border border-gray-300 mr-4">
@@ -127,8 +129,8 @@ const Login = () => {
               }}
             >
               <div className="w-11/12 mx-auto">
-                <Slider className="loginsection mx-auto" {...settings}>
-                  {modelData.map((model, index) => (
+                <Slider className="cutom-carousel mx-auto" {...settings}>
+                  {carouselData.map((model, index) => (
                     <div key={index} className="mx-auto mt-auto">
                       <img
                         className="mx-auto"

@@ -33,7 +33,7 @@ module.exports = {
       colors: {
         "dark-blue": "#151D48",
         "milky-white": "#F5F5F5",
-        // "light-gray": "#F5F5F5",
+        "light-gray": "rgba(51, 51, 51, 0.75)",
       },
       lineHeight: {
         12: "3.125rem",

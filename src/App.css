@@ -75,7 +75,6 @@
   opacity: 100%;
   border-radius: 100%;
   background-color: rgba(0, 0, 0, 0.1) !important;
-  /* opacity: 10%; */
   line-height: 10 !important;
 }
 
@@ -93,22 +92,24 @@
 .feedback > .slick-prev:hover::before {
   content: url("./assets/Icons/arrow-left-white.svg") !important;
   background-color: #151d48 !important;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 29px 0px;
 }
 
 .feedback > .slick-next:hover::before {
   content: url("./assets/Icons/arrow-right-white.svg") !important;
   background-color: #151d48 !important;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 29px 0px;
 }
 
 /* For Login Page */
 
-.loginsection > .slick-dots li button::before {
+.cutom-carousel > .slick-dots li button::before {
   color: white !important;
   opacity: 1 !important;
   content: url("./assets/Icons/carousel-btn.svg") !important;
 }
 
-.loginsection > .slick-dots li.slick-active button:before {
+.cutom-carousel > .slick-dots li.slick-active button:before {
   color: white !important;
   background-color: white !important;
   padding: 0 20px;
@@ -118,9 +119,9 @@
   margin-left: -10px;
 }
 
-.loginsection > .slick-dots {
+.cutom-carousel > .slick-dots {
   bottom: 1vh !important;
-  left: 0px !important;
+  left: 5px !important;
   width: 30% !important;
   display: flex !important;
   justify-content: space-between;
@@ -136,4 +137,11 @@
   max-width: 31.2rem;
   max-height: 38.75rem;
   /* max-height: 60vh; */
+}
+
+/* For Signup Page */
+
+.signup-banner {
+  width: 33.2rem;
+  min-height: 100vh;
 }

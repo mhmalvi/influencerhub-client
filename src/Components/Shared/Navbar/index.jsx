@@ -24,14 +24,15 @@ const Navbar = () => {
               <Link to={"/login"} className="mr-5 cursor-pointer">
                 Login
               </Link>
-              <button
+              <Link
+                to={"/signup"}
                 className={`${
                   toggleSignup ? "btn-grad" : "btn-grad-reverse"
                 } text-white px-8 py-3 rounded-full cursor-pointer font-thin font-mulish`}
                 onClick={() => setToggleSignup(!toggleSignup)}
               >
                 Sign up
-              </button>
+              </Link>
             </div>
           </div>
         </div>
