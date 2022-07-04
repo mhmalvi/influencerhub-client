@@ -6,7 +6,7 @@ const WorkShowcase = () => {
       <div className="w-10/12 mx-auto mb-20 flex items-center">
         <div className="">
           <div className=" mx-auto">
-            <h3 className="text-heading font-bold font-abhaya pr-40 mb-4">
+            <h3 className="text-heading font-bold font-abhaya pr-40 mb-4 leading-12">
               Work show influencers in instagram
             </h3>
             <p className="mt-6 text-left font-mulish mr-36">

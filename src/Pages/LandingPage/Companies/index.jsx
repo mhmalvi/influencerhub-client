@@ -19,7 +19,7 @@ const Companies = () => {
     <div className="page-width mx-auto pt-32 pb-20">
       <div className="w-8/12 mx-auto">
         <div>
-          <h1 className="text-heading font-bold font-abhaya text-center mb-12">
+          <h1 className="text-heading font-bold font-abhaya text-center mb-12 leading-12">
             Trusted by 5,000+ Companies Worldwide
           </h1>
         </div>

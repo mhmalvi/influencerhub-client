@@ -2,14 +2,13 @@ import React from "react";
 
 const Header = () => {
   return (
-    // <div className="page-width mx-auto pl-6 md:ml-20 xl:ml-32 2xl:ml-96 flex justify-end items-center mb-20">
     <div className="relative flex justify-end items-center mb-36">
       {/* Content */}
       <div className="header-width mx-auto py-20">
         {/* <div className="w-10/12 mx-auto"> */}
         <div className="w-6/12 mr-auto">
           <div>
-            <h1 className="text-heading font-bold font-abhaya">
+            <h1 className="text-heading font-bold font-abhaya leading-12">
               Brand Promoter and Creator are both in the same place
             </h1>
           </div>
