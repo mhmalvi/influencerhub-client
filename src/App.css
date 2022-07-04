@@ -145,3 +145,13 @@
   width: 33.2rem;
   min-height: 100vh;
 }
+
+/* For Collapse  */
+/* .find-campaign > .ant-collapse-arrow {
+  content: url("./assets/Icons/down-arrow.svg") !important;
+}
+
+.find-campaign > .ant-collapse-header {
+  background-color: transparent !important;
+  color: #0074d1 !important;
+} */

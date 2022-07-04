@@ -11,6 +11,7 @@ module.exports = {
         22: "5.5rem",
         29: "7.5rem",
         38: "9.4rem",
+        42: "10.75rem",
         50: "12.5rem",
         68: "18rem",
         82: "20.5rem",
@@ -28,6 +29,7 @@ module.exports = {
         13: "3.125rem",
         18: "4.5rem",
         21: "5.5rem",
+        27: "6.875rem",
         30: "7.5rem",
       },
       colors: {
