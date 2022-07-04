@@ -5,7 +5,7 @@ import feedbackData from "./feedbackData.json";
 
 const FeedBacks = () => {
   const settings = {
-    dots: true,
+    dots: false,
     arrows: true,
     infinite: true,
     speed: 500,
@@ -38,8 +38,8 @@ const FeedBacks = () => {
         </h1>
       </div>
       <div className="w-10/12  mx-auto">
-        <div id="feedback" className="relative">
-          <Slider {...settings}>
+        <div className="relative">
+          <Slider className="feedback" {...settings}>
             {feedbackData.map((feedback, index) => (
               <FeedBack key={index} feedback={feedback} />
             ))}

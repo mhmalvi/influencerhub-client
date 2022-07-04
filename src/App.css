@@ -53,76 +53,73 @@
 
 /* Slick Carousel */
 
-#feedback > .slick-prev {
+.feedback > .slick-prev {
   position: absolute !important;
   top: 110% !important;
   left: 45% !important;
   z-index: 999;
 }
 
-#feedback > .slick-next {
+.feedback > .slick-next {
   position: absolute !important;
   top: 110% !important;
   right: 48% !important;
   z-index: 999 !important;
 }
 
-#feedback > .slick-prev:before {
+.feedback > .slick-prev:before {
   font-family: "slick";
   content: url("./assets/Icons/arrow-left.svg") !important;
   padding: 7px 4px 7px 10px;
   margin: auto !important;
   opacity: 100%;
   border-radius: 100%;
-  background-color: rgb(204, 203, 202) !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  /* opacity: 10%; */
   line-height: 10 !important;
 }
 
-#feedback > .slick-next:before {
+.feedback > .slick-next:before {
   font-family: "slick";
   content: url("./assets/Icons/arrow-right.svg") !important;
-  /* color: black !important; */
   padding: 7px 4px 7px 10px;
   margin: auto !important;
   opacity: 100%;
   border-radius: 100%;
-  background-color: rgb(204, 203, 202) !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
   line-height: 10 !important;
 }
 
-#feedback > .slick-prev:hover::before {
+.feedback > .slick-prev:hover::before {
   content: url("./assets/Icons/arrow-left-white.svg") !important;
   background-color: #151d48 !important;
 }
 
-#feedback > .slick-next:hover::before {
+.feedback > .slick-next:hover::before {
   content: url("./assets/Icons/arrow-right-white.svg") !important;
   background-color: #151d48 !important;
 }
 
-#feedback > .slick-dots {
-  display: none !important;
-}
+/* For Login Page */
 
-#loginsection > .slick-dots li button::before {
+.loginsection > .slick-dots li button::before {
   color: white !important;
   opacity: 1 !important;
   content: url("./assets/Icons/carousel-btn.svg") !important;
-  /* margin: 0 auto; */
-  /* margin:0 30px important; */
 }
 
-#loginsection > .slick-dots li.slick-active button:before {
+.loginsection > .slick-dots li.slick-active button:before {
   color: white !important;
   background-color: white !important;
   padding: 0 20px;
   height: 13px;
   border-radius: 500px;
   margin-top: 2px;
+  margin-left: -10px;
 }
 
-#loginsection > .slick-dots {
-  bottom: 25px !important;
+.loginsection > .slick-dots {
+  bottom: 1vh !important;
   left: 0px !important;
   width: 30% !important;
   display: flex !important;
@@ -130,8 +127,13 @@
   align-items: center;
 }
 
-/* For Login Page */
+.login-form {
+  width: 26rem;
+}
+
 .login-banner {
-  width: 33.2rem;
-  height: 38.75rem;
+  /* max-width: 31.2rem; */
+  max-width: 31.2rem;
+  max-height: 38.75rem;
+  /* max-height: 60vh; */
 }

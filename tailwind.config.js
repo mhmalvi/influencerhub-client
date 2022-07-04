@@ -35,6 +35,9 @@ module.exports = {
         "milky-white": "#F5F5F5",
         // "light-gray": "#F5F5F5",
       },
+      lineHeight: {
+        12: "3.125rem",
+      },
     },
   },
   plugins: [],
