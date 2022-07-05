@@ -1,13 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import profilePicture from "../../../assets/Images/profile.png";
 import Icons from "../Icons";
+import profilePicture from "../../../assets/Images/profile.png";
 
-const Navbar = ({ loggedin }) => {
-  const [toggleSignup, setToggleSignup] = useState(false);
-
+const NavbarSm = ({ loggedin }) => {
   return (
-    <div className="page-width mx-auto px-28 my-14">
+    <div className="w-full ml-auto my-14">
       <div className="flex justify-between items-center">
         {/* Logo */}
         <div className="font-pacifico text-2xl cursor-pointer">LOGO</div>
@@ -40,10 +38,7 @@ const Navbar = ({ loggedin }) => {
                 </Link>
                 <Link
                   to={"/signup"}
-                  className={`${
-                    toggleSignup ? "btn-grad" : "btn-grad-reverse"
-                  } text-white px-8 py-3 rounded-full cursor-pointer font-thin font-mulish`}
-                  onClick={() => setToggleSignup(!toggleSignup)}
+                  className="btn-gradtext-white px-8 py-3 rounded-full cursor-pointer font-thin font-mulish"
                 >
                   Sign up
                 </Link>
@@ -69,4 +64,4 @@ const Navbar = ({ loggedin }) => {
   );
 };
 
-export default Navbar;
+export default NavbarSm;

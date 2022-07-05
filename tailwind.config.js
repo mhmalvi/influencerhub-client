@@ -7,6 +7,7 @@ module.exports = {
         heading: "2.5rem",
       },
       width: {
+        17: "4.3rem",
         19: "4.5rem",
         22: "5.5rem",
         29: "7.5rem",
@@ -14,6 +15,7 @@ module.exports = {
         42: "10.75rem",
         50: "12.5rem",
         68: "18rem",
+        73: "18.4rem",
         82: "20.5rem",
       },
       height: {
@@ -38,6 +40,7 @@ module.exports = {
         "light-gray": "rgba(51, 51, 51, 0.75)",
       },
       lineHeight: {
+        4.5: "1.125rem",
         12: "3.125rem",
       },
     },

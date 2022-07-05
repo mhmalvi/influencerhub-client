@@ -7,7 +7,8 @@ import Login from "./Pages/Login";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Signup from "./Pages/Signup";
-import FindCampaigns from "./Pages/Campaigns/FindCampaigns";
+import FindCampaigns from "./Pages/Campaigns";
+import CampaignDetails from "./Pages/Campaigns/CampaignDetails";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<Signup />} />
         <Route path="find-campaign" element={<FindCampaigns />} />
+        <Route path="campaign/:id" element={<CampaignDetails />} />
       </Routes>
       <ScrollToTop />
     </div>

@@ -3,6 +3,7 @@ import { Dropdown } from "antd";
 import { Space, Menu } from "antd/lib";
 import Icons from "../../Components/Shared/Icons";
 import Navbar from "../../Components/Shared/Navbar";
+import Campaingn from "./Campaingn";
 
 const FindCampaigns = () => {
   const menu = (
@@ -35,11 +36,11 @@ const FindCampaigns = () => {
   );
 
   return (
-    <>
+    <div className="max-h-screen">
       <Navbar loggedin={true} />
       <div className="page-width pl-27 pr-30 mx-auto">
-        <div className="flex ">
-          <div className="w-52 h-32 bg-blue-300 rounded-2xl mr-3.5"></div>
+        <div className="flex justify-center items-center">
+          <div className="w-52 h-32 bg-blue-200 rounded-2xl mr-3.5"></div>
           <div className="w-full">
             <h1 className="text-heading font-bold font-abhaya mb-1 leading-12">
               Beat to join the camping
@@ -47,8 +48,8 @@ const FindCampaigns = () => {
             <p className="font-light text-gray-400 text-xs font-mulish">
               Filter Get the best camping
             </p>
-            <div className="min-w-full flex justify-between items-end">
-              <div className="text-sm flex items-center">
+            <div className="w-full flex justify-between items-end">
+              <div className="text-sm flex justify-start items-center">
                 <div className="cursor-pointer">All Courses</div>
                 <div className="cursor-pointer font-light mx-2 font-mulish">
                   The Newest
@@ -61,8 +62,8 @@ const FindCampaigns = () => {
                 </div>
               </div>
               <div className="font-mulish">
-                <form action="" className="flex items-center">
-                  <div className="w-60 px-2.5 py-2 border border-gray-400 rounded-2xl flex items-center">
+                <form action="" className="flex justify-start items-center">
+                  <div className="w-60 px-2.5 py-3 border border-gray-400 rounded-2xl flex justify-center items-center">
                     <div className="w-14 mr-3">
                       <Icons.Search />
                     </div>
@@ -73,7 +74,7 @@ const FindCampaigns = () => {
                     />
                   </div>
                   <button
-                    className="py-2 px-5 rounded-2xl bg-dark-blue text-white ml-2"
+                    className="py-3 px-5 font-light rounded-2xl bg-dark-blue text-white ml-2"
                     type="submit"
                   >
                     GO
@@ -83,7 +84,7 @@ const FindCampaigns = () => {
             </div>
           </div>
         </div>
-        <div className="font-mulish mt-5">
+        <div className="font-mulish mt-6 flex justify-between items-start">
           <div className="w-42 px-3 py-7 border rounded-xl">
             <div className="py-2">
               <p className="text-xs font-light">Creator in</p>
@@ -94,7 +95,7 @@ const FindCampaigns = () => {
                     href="/"
                     onClick={(e) => e.preventDefault()}
                   >
-                    <Space className="w-38 flex justify-between items-center px-4 pb-2 rounded-br-xl border-b border-r">
+                    <Space className="w-38 flex justify-between items-center px-4 pb-2 rounded-br-xl border-gray-200 border-b border-r">
                       <p className="m-0 font-light text-sm">Influencer</p>
                       <Icons.DownArror className="ml-auto" />
                     </Space>
@@ -112,7 +113,7 @@ const FindCampaigns = () => {
                     href="/"
                     onClick={(e) => e.preventDefault()}
                   >
-                    <Space className="w-38 flex justify-between items-center px-4 pb-2 rounded-br-xl border-b border-r">
+                    <Space className="w-38 flex justify-between items-center px-4 pb-2 rounded-br-xl border-gray-200 border-b border-r">
                       <p className="m-0 font-light text-sm">Youtube</p>
                       <Icons.DownArror className="ml-auto" />
                     </Space>
@@ -130,7 +131,7 @@ const FindCampaigns = () => {
                     href="/"
                     onClick={(e) => e.preventDefault()}
                   >
-                    <Space className="w-38 flex justify-between items-center px-4 pb-2 rounded-br-xl border-b border-r">
+                    <Space className="w-38 flex justify-between items-center px-4 pb-2 rounded-br-xl border-gray-200 border-b border-r">
                       <p className="m-0 font-light text-sm">Fashion</p>
                       <Icons.DownArror className="ml-auto" />
                     </Space>
@@ -148,7 +149,7 @@ const FindCampaigns = () => {
                     href="/"
                     onClick={(e) => e.preventDefault()}
                   >
-                    <Space className="w-38 flex justify-between items-center px-4 pb-2 rounded-br-xl border-b border-r">
+                    <Space className="w-38 flex justify-between items-center px-4 pb-2 rounded-br-xl border-gray-200 border-b border-r">
                       <p className="m-0 font-light text-sm">Image</p>
                       <Icons.DownArror className="ml-auto" />
                     </Space>
@@ -161,22 +162,28 @@ const FindCampaigns = () => {
               <p className="m-0 font-light text-sm">Prize money</p>
               <div>
                 <input
-                  className="w-14 p-2 mr-4 outline-none rounded-br-xl border-b border-r"
+                  className="w-17 pl-5 pr-1 py-1.5 mr-2 outline-none rounded-br-xl border-b border-r"
                   type="text"
                   placeholder="Min"
                 />
                 <input
-                  className="w-14 p-2 outline-none rounded-br-xl border-b border-r"
+                  className="w-17 pl-5 pr-1 py-1.5 outline-none rounded-br-xl border-b border-r"
                   type="text"
                   placeholder="Max"
                 />
               </div>
             </div>
           </div>
-          <div></div>
+          <div className="cmpaigns mt-0.5 overflow-y-scroll">
+            <Campaingn />
+            <Campaingn />
+            <Campaingn />
+            <Campaingn />
+            <Campaingn />
+          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
