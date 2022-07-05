@@ -9,6 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Signup from "./Pages/Signup";
 import FindCampaigns from "./Pages/Campaigns";
 import CampaignDetails from "./Pages/Campaigns/CampaignDetails";
+import BiddingForms from "./Pages/Campaigns/BiddingForms";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="signup" element={<Signup />} />
         <Route path="find-campaign" element={<FindCampaigns />} />
         <Route path="campaign/:id" element={<CampaignDetails />} />
+        <Route path="bid" element={<BiddingForms />} />
       </Routes>
       <ScrollToTop />
     </div>

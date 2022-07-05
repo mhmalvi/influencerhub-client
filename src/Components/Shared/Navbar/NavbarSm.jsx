@@ -5,7 +5,7 @@ import profilePicture from "../../../assets/Images/profile.png";
 
 const NavbarSm = ({ loggedin }) => {
   return (
-    <div className="w-full ml-auto my-14">
+    <div className="navbarsm-width mr-auto my-14">
       <div className="flex justify-between items-center">
         {/* Logo */}
         <div className="font-pacifico text-2xl cursor-pointer">LOGO</div>
