@@ -183,3 +183,9 @@
 .cmpaign-details-banner {
   max-width: 19.5rem !important;
 }
+
+/* For Popup */
+.popup-width {
+  width: 55rem;
+  height: 30.125rem;
+}

@@ -43,6 +43,9 @@ module.exports = {
         4.5: "1.125rem",
         12: "3.125rem",
       },
+      fontSize: {
+        "4.5xl": "2.5rem",
+      },
     },
   },
   plugins: [],

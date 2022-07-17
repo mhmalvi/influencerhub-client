@@ -17,7 +17,7 @@ const CampaignDetails = () => {
         <div className="ml-16 font-mulish">
           {/* <Navbar loggedin={true} /> */}
           <NavbarSm loggedin={true} />
-          <div className="flex justify-between items-center">
+          <div className="pt-8 flex justify-between items-center">
             <div className="w-2/3 mr-4">
               <h4 className="text-base leading-6 font-semibold text-blue-500 mb-4">
                 Creator name
