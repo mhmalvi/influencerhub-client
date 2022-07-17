@@ -2,8 +2,49 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Icons from "../Icons";
 import profilePicture from "../../../assets/Images/profile.png";
+import { Dropdown, Menu } from "antd";
 
 const NavbarSm = ({ loggedin }) => {
+  const menu = (
+    <Menu
+      className="rounded-3xl top-2"
+      items={[
+        {
+          icon: <Icons.Settings />,
+          label: (
+            <Link to={"/"} className="font-mulish">
+              Account Setting
+            </Link>
+          ),
+          key: "0",
+        },
+        {
+          icon: <Icons.User />,
+          label: (
+            <Link to={"/"} className="font-mulish">
+              Profile
+            </Link>
+          ),
+          key: "1",
+        },
+        {
+          icon: <Icons.Wallet />,
+          label: (
+            <Link to={"/"} className="font-mulish">
+              Wallet
+            </Link>
+          ),
+          key: "2",
+        },
+        {
+          icon: <Icons.LogOut />,
+          label: <Link to={"/"}>Log Out</Link>,
+          key: "3",
+        },
+      ]}
+    />
+  );
+
   return (
     <div className="navbarsm-width mr-auto my-14">
       <div className="flex justify-between items-center">
@@ -52,9 +93,11 @@ const NavbarSm = ({ loggedin }) => {
                 <Link to={"/login"} className="mr-5 cursor-pointer">
                   <Icons.Notification />
                 </Link>
-                <Link to={"/find-campaign"} className="mr-5 cursor-pointer">
-                  <img src={profilePicture} alt="" />
-                </Link>
+                <div className="mr-5 cursor-pointer">
+                  <Dropdown overlay={menu} trigger={["click"]}>
+                    <img src={profilePicture} alt="avatar" />
+                  </Dropdown>
+                </div>
               </div>
             )}
           </div>
