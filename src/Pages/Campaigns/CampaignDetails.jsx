@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Modal from "../../Components/Shared/Modal";
 // import Navbar from "../../Components/Shared/Navbar";
 import NavbarSm from "../../Components/Shared/Navbar/NavbarSm";
 
 const CampaignDetails = () => {
+  const [popUp, setPopUp] = useState(false);
+
   return (
     <div className="page-width mx-auto">
       <div className="flex items-start">
@@ -14,6 +17,10 @@ const CampaignDetails = () => {
             alt=""
           />
         </div>
+
+        {/* Modal */}
+        <div>{popUp && <Modal popUp={popUp} setPopUp={setPopUp} />}</div>
+
         <div className="ml-16 font-mulish">
           {/* <Navbar loggedin={true} /> */}
           <NavbarSm loggedin={true} />
@@ -52,7 +59,12 @@ const CampaignDetails = () => {
               </div>
             </div>
             <div className="w-80 flex flex-col justify-center border border-gray-400 rounded-xl p-8 mx-10">
-              <button className="w-full py-3 text-base leading-6 font-light bg-dark-blue text-white rounded-lg mx-auto">
+              <button
+                className="w-full py-3 text-base leading-6 font-light bg-dark-blue text-white rounded-lg mx-auto"
+                onClick={() => {
+                  setPopUp(true);
+                }}
+              >
                 Bid submit
               </button>
 

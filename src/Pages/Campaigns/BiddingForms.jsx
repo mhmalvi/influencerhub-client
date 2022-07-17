@@ -1,8 +1,7 @@
-import { Modal } from "antd";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Correct from "../../assets/Images/correct.png";
 import Icons from "../../Components/Shared/Icons";
+import Modal from "../../Components/Shared/Modal";
 import NavbarSm from "../../Components/Shared/Navbar/NavbarSm";
 
 const BiddingForms = () => {
@@ -18,32 +17,10 @@ const BiddingForms = () => {
             alt=""
           />
         </div>
+
         {/* Modal */}
+        <div>{popUp && <Modal popUp={popUp} setPopUp={setPopUp} />}</div>
 
-        <Modal
-          title="Vertically centered modal dialog"
-          className="bg-gray-50 bg-opacity-50 backdrop-filter backdrop-blur-md border rounded-xl p-24"
-          centered
-          footer={null}
-          visible={popUp}
-          onOk={() => setPopUp(false)}
-          onCancel={() => setPopUp(false)}
-          // style={NoFormStyle}
-        >
-          <img className="mx-auto pb-4" src={Correct} alt="" />
-          <h4 className="text-center mt-4 text-4.5xl font-abhaya font-bold px-8">
-            Thank you. Your bidding is complete You check the bidding list
-          </h4>
-        </Modal>
-
-        {/* {popUp && (
-          <div className="popup-width absolute top-36 right-1/4 bg-gray-50 bg-opacity-50 backdrop-filter backdrop-blur-md border rounded-xl p-24">
-            <img className="mx-auto pb-4" src={Correct} alt="" />
-            <h4 className="text-center mt-4 text-4.5xl font-abhaya font-bold px-8">
-              Thank you. Your bidding is complete You check the bidding list
-            </h4>
-          </div>
-        )} */}
         <div className="ml-16 font-mulish">
           <NavbarSm loggedin={true} />
           <div className="pt-8 flex justify-between items-center">
