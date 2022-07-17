@@ -19,11 +19,11 @@ const CreatorDashboard = () => {
     <div className="bg-gray-50">
       <div className="page-width h-screen mx-auto">
         <div className="flex">
-          <div className="flex">
+          <div className="flex relative top-0 left-0">
             <div className="w-86">
               <img className="z-0 h-screen" src={dashboardBg} alt="" />
             </div>
-            <div className="-ml-44 mt-36">
+            <div className="md:-ml-60 lg:-ml-44 mt-36">
               <div>
                 <img className="rounded-lg mb-16" src={dashboardImg} alt="" />
               </div>
