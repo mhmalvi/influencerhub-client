@@ -8,7 +8,7 @@ const Header = () => {
         {/* <div className="w-10/12 mx-auto"> */}
         <div className="w-6/12 mr-auto">
           <div>
-            <h1 className="text-heading font-bold font-abhaya leading-12">
+            <h1 className="text-4.5xl font-bold font-abhaya leading-12">
               Brand Promoter and Creator are both in the same place
             </h1>
           </div>

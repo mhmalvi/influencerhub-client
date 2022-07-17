@@ -12,7 +12,7 @@ const NavbarSm = ({ loggedin }) => {
         {
           icon: <Icons.Settings />,
           label: (
-            <Link to={"/"} className="font-mulish">
+            <Link to={"/"} className="font-mulish leading-5">
               Account Setting
             </Link>
           ),
@@ -21,7 +21,7 @@ const NavbarSm = ({ loggedin }) => {
         {
           icon: <Icons.User />,
           label: (
-            <Link to={"/"} className="font-mulish">
+            <Link to={"/"} className="font-mulish leading-5">
               Profile
             </Link>
           ),
@@ -30,7 +30,7 @@ const NavbarSm = ({ loggedin }) => {
         {
           icon: <Icons.Wallet />,
           label: (
-            <Link to={"/"} className="font-mulish">
+            <Link to={"/"} className="font-mulish leading-5">
               Wallet
             </Link>
           ),
@@ -38,7 +38,11 @@ const NavbarSm = ({ loggedin }) => {
         },
         {
           icon: <Icons.LogOut />,
-          label: <Link to={"/"}>Log Out</Link>,
+          label: (
+            <Link to={"/"} className="font-mulish leading-5">
+              Log Out
+            </Link>
+          ),
           key: "3",
         },
       ]}
@@ -54,7 +58,7 @@ const NavbarSm = ({ loggedin }) => {
         {/* Menu */}
         <div className="w-7/12">
           <div className="flex justify-between items-center">
-            <div className="w-8/12 flex justify-evenly items-center">
+            <div className="w-8/12 flex justify-evenly items-center text-base font-normal leading-6">
               {loggedin && (
                 <>
                   <div className="cursor-pointer">Find Camping</div>

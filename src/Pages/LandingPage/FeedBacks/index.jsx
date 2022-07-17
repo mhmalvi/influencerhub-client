@@ -33,7 +33,7 @@ const FeedBacks = () => {
   return (
     <div className="page-width mx-auto my-20">
       <div className="mb-20 w-6/12 mx-auto">
-        <h1 className="text-heading font-bold font-abhaya text-center px-28 mb-4 leading-12">
+        <h1 className="text-4.5xl font-bold font-abhaya text-center px-28 mb-4 leading-12">
           What the people think about us
         </h1>
       </div>

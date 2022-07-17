@@ -4,7 +4,7 @@ const Tutorial = () => {
   return (
     <div className="page-width mx-auto py-20">
       <div className="mb-20 w-6/12 mx-auto px-10 2xl:px-20">
-        <h1 className="text-heading font-bold font-abhaya text-center mb-4 leading-12">
+        <h1 className="text-4.5xl font-bold font-abhaya text-center mb-4 leading-12">
           How to work on platforms get camping
         </h1>
       </div>

@@ -162,11 +162,11 @@ const Signup = () => {
             <div className="flex justify-center items-center">
               <button className="w-full py-2 px-2 text-black font-semibold mx-auto bg-white rounded-lg border border-gray-300 mr-4 flex justify-center items-center">
                 <img className="mr-3" src={google} alt="" />
-                <p>Continue with Google</p>
+                <p className="m-0">Continue with Google</p>
               </button>
               <button className="w-full py-2 px-2 text-black font-semibold mx-auto bg-white rounded-lg border border-gray-300  flex justify-center items-center">
                 <img className="mr-3" src={facebook} alt="" />
-                <p>Continue with Facebook</p>
+                <p className="m-0">Continue with Facebook</p>
               </button>
             </div>
           </div>

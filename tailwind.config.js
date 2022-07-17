@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontSize: {
-        heading: "2.5rem",
+        "4.5xl": "2.5rem",
       },
       width: {
         17: "4.3rem",
@@ -17,6 +17,7 @@ module.exports = {
         68: "18rem",
         73: "18.4rem",
         82: "20.5rem",
+        86: "22.3rem",
       },
       height: {
         22: "5.5rem",
@@ -43,8 +44,8 @@ module.exports = {
         4.5: "1.125rem",
         12: "3.125rem",
       },
-      fontSize: {
-        "4.5xl": "2.5rem",
+      margin: {
+        29: "7.125rem",
       },
     },
   },

@@ -8,12 +8,14 @@ import { ReactComponent as Notification } from "../../assets/Icons/notification.
 import { ReactComponent as Search } from "../../assets/Icons/search.svg";
 import { ReactComponent as DownArror } from "../../assets/Icons/down-arrow.svg";
 import { ReactComponent as People } from "../../assets/Icons/people.svg";
-import { ReactComponent as Clock } from "../../assets/Icons/timec-circle.svg";
+import { ReactComponent as Clock } from "../../assets/Icons/time-circle.svg";
 import { ReactComponent as QuestionMark } from "../../assets/Icons/question.svg";
 import { ReactComponent as Settings } from "../../assets/Icons/settings.svg";
 import { ReactComponent as User } from "../../assets/Icons/user.svg";
 import { ReactComponent as Wallet } from "../../assets/Icons/wallet.svg";
 import { ReactComponent as LogOut } from "../../assets/Icons/logOut.svg";
+import { ReactComponent as Tiktok } from "../../assets/Icons/tiktok.svg";
+import { ReactComponent as OutlineFacebook } from "../../assets/Icons/outline_facebook.svg";
 
 const Icons = {
   Facebook,
@@ -32,6 +34,8 @@ const Icons = {
   User,
   Wallet,
   LogOut,
+  Tiktok,
+  OutlineFacebook,
 };
 
 export default Icons;

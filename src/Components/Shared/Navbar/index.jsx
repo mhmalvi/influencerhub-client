@@ -15,7 +15,7 @@ const Navbar = ({ loggedin }) => {
         {/* Menu */}
         <div className="w-7/12">
           <div className="flex justify-between items-center">
-            <div className="w-8/12 flex justify-evenly items-center">
+            <div className="w-8/12 flex justify-evenly items-center text-base font-normal leading-6">
               {loggedin && (
                 <>
                   <div className="cursor-pointer">Find Camping</div>
@@ -31,7 +31,7 @@ const Navbar = ({ loggedin }) => {
               {!loggedin && <div className="cursor-pointer">About</div>}
             </div>
             {!loggedin && (
-              <div className="flex justify-center items-center">
+              <div className="flex justify-center items-center  text-base font-normal leading-6">
                 <Link
                   to={"/login"}
                   className="mr-5 cursor-pointer text-black hover:text-black"

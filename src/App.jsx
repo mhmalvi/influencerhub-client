@@ -10,6 +10,7 @@ import Signup from "./Pages/Signup";
 import FindCampaigns from "./Pages/Campaigns";
 import CampaignDetails from "./Pages/Campaigns/CampaignDetails";
 import BiddingForms from "./Pages/Campaigns/BiddingForms";
+import CreatorDashboard from "./Pages/Dashboard/CreatorDashboard";
 
 function App() {
   return (
@@ -18,9 +19,10 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<Signup />} />
-        <Route path="find-campaign" element={<FindCampaigns />} />
+        <Route path="campaigns" element={<FindCampaigns />} />
         <Route path="campaign/:id" element={<CampaignDetails />} />
         <Route path="bid" element={<BiddingForms />} />
+        <Route path="creator-dashboard" element={<CreatorDashboard />} />
       </Routes>
       <ScrollToTop />
     </div>

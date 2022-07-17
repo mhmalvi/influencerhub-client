@@ -3,7 +3,7 @@ import { Dropdown } from "antd";
 import { Space, Menu } from "antd/lib";
 import Icons from "../../Components/Shared/Icons";
 import Navbar from "../../Components/Shared/Navbar";
-import Campaingn from "./Campaingn";
+import Campaign from "./Campaign";
 
 const FindCampaigns = () => {
   const menu = (
@@ -42,7 +42,7 @@ const FindCampaigns = () => {
         <div className="flex justify-center items-center">
           <div className="w-52 h-32 bg-blue-200 rounded-2xl mr-3.5"></div>
           <div className="w-full">
-            <h1 className="text-heading font-bold font-abhaya mb-1 leading-12">
+            <h1 className="text-4.5xl font-bold font-abhaya mb-1 leading-12">
               Beat to join the camping
             </h1>
             <p className="font-light text-gray-400 text-xs font-mulish">
@@ -175,11 +175,11 @@ const FindCampaigns = () => {
             </div>
           </div>
           <div className="cmpaigns mt-0.5 overflow-y-scroll">
-            <Campaingn />
-            <Campaingn />
-            <Campaingn />
-            <Campaingn />
-            <Campaingn />
+            <Campaign />
+            <Campaign />
+            <Campaign />
+            <Campaign />
+            <Campaign />
           </div>
         </div>
       </div>
