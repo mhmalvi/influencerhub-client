@@ -16,6 +16,9 @@ import { ReactComponent as Wallet } from "../../assets/Icons/wallet.svg";
 import { ReactComponent as LogOut } from "../../assets/Icons/logOut.svg";
 import { ReactComponent as Tiktok } from "../../assets/Icons/tiktok.svg";
 import { ReactComponent as OutlineFacebook } from "../../assets/Icons/outline_facebook.svg";
+import { ReactComponent as PeopleFilled } from "../../assets/Icons/people-filled.svg";
+import { ReactComponent as BorderStock } from "../../assets/Icons/border-strock.svg";
+import { ReactComponent as Clip } from "../../assets/Icons/clip.svg";
 
 const Icons = {
   Facebook,
@@ -36,6 +39,9 @@ const Icons = {
   LogOut,
   Tiktok,
   OutlineFacebook,
+  PeopleFilled,
+  BorderStock,
+  Clip,
 };
 
 export default Icons;

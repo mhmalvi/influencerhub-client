@@ -61,17 +61,24 @@ const NavbarSm = ({ loggedin }) => {
             <div className="w-8/12 flex justify-evenly items-center text-base font-normal leading-6">
               {loggedin && (
                 <>
-                  <div className="cursor-pointer">Find Camping</div>
-                  <div className="cursor-pointer">Dashboard</div>
+                  <Link to={"/campaigns"} className="cursor-pointer mr-2">
+                    Find Camping
+                  </Link>
+                  <Link
+                    to={"/creator-dashboard"}
+                    className="cursor-pointer mr-2"
+                  >
+                    Dashboard
+                  </Link>
                 </>
               )}
               {!loggedin && (
-                <div className="cursor-pointer">Band & Agencie</div>
+                <div className="cursor-pointer mr-2">Band & Agencie</div>
               )}
-              {!loggedin && <div className="cursor-pointer">Creator</div>}
-              <div className="cursor-pointer">Studio</div>
-              <div className="cursor-pointer">Insight</div>
-              {!loggedin && <div className="cursor-pointer">About</div>}
+              {!loggedin && <div className="cursor-pointer mr-2">Creator</div>}
+              <div className="cursor-pointer mr-2">Studio</div>
+              <div className="cursor-pointer mr-2">Insight</div>
+              {!loggedin && <div className="cursor-pointer mr-2">About</div>}
             </div>
             {!loggedin && (
               <div className="flex justify-center items-center">

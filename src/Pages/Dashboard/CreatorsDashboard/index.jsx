@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import dashboardBg from "../../assets/Images/dashboard-bg.jpg";
-import dashboardImg from "../../assets/Images/dashboard-image.jpg";
-import Icons from "../../Components/Shared/Icons";
-import NavbarSm from "../../Components/Shared/Navbar/NavbarSm";
+import dashboardBg from "../../../assets/Images/dashboard-bg.jpg";
+import dashboardImg from "../../../assets/Images/dashboard-image.jpg";
+import Icons from "../../../Components/Shared/Icons";
+import NavbarSm from "../../../Components/Shared/Navbar/NavbarSm";
+import Campaign from "./Campaign";
 import campaignData from "./CmapignData.json";
 
-const CreatorDashboard = () => {
+const CreatorsDashboard = () => {
   const [active, setActive] = useState("Biding");
   const [campaignType, setCampaignType] = useState(0);
 
@@ -23,7 +23,7 @@ const CreatorDashboard = () => {
             <div className="w-86">
               <img className="z-0 h-screen" src={dashboardBg} alt="" />
             </div>
-            <div className="md:-ml-60 lg:-ml-44 mt-36">
+            <div className="md:-ml-56 xl:-ml-44 2xl:-ml-44 mt-36">
               <div>
                 <img className="rounded-lg mb-16" src={dashboardImg} alt="" />
               </div>
@@ -96,7 +96,7 @@ const CreatorDashboard = () => {
             <NavbarSm loggedin={true} />
             <div className="ml-6 mt-12">
               <h1 className="text-4.5xl font-abhaya font-bold text-gray-700 leading-12 m-0">
-                Beat to join the camping
+                Beat to join the campign
               </h1>
               <p className="text-sm font-light leading-5 text-gray-400">
                 Filter Get the best camping
@@ -139,43 +139,7 @@ const CreatorDashboard = () => {
               <div>
                 <div className="creator-campaigns scroll-smooth grid grid-cols-3 gap-6 justify-between items-center mt-10 overflow-y-auto">
                   {campaignData.map((campaign) => (
-                    <div className="w-60 rounded-md bg-white shadow-sm">
-                      <img
-                        className="w-full rounded-tl-md rounded-tr-md"
-                        src={campaign.banner}
-                        alt=""
-                      />
-                      <div className="px-3 py-2">
-                        <h5 className="text-sm font-light text-blue-500">
-                          {campaign.type}
-                        </h5>
-                        <p>{campaign.title}</p>
-                        <div className="flex justify-between items-center">
-                          <div className="flex items-center text-xs">
-                            <div className="flex items-center mr-3 leading-5">
-                              <Icons.People className="text-gray-400 mr-1" />
-                              <span>30</span>
-                            </div>
-                            <div className="flex items-center leading-5">
-                              <Icons.Clock className="text-gray-400 mr-1" />
-                              <span>3</span>
-                              <span className="text-gray-400 ml-1">Days</span>
-                            </div>
-                          </div>
-                          <div className="flex items-center">
-                            <Link to={"/"}>
-                              <Icons.Tiktok className="w-5 text-gray-400" />
-                            </Link>
-                            <Link to={"/"}>
-                              <Icons.Instagram className="w-4 text-gray-400 mx-1" />
-                            </Link>
-                            <Link to={"/"}>
-                              <Icons.OutlineFacebook className="w-4 text-gray-500 ml-0.5" />
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <Campaign campaign={campaign} />
                   ))}
                 </div>
               </div>
@@ -187,4 +151,4 @@ const CreatorDashboard = () => {
   );
 };
 
-export default CreatorDashboard;
+export default CreatorsDashboard;

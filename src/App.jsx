@@ -10,7 +10,8 @@ import Signup from "./Pages/Signup";
 import FindCampaigns from "./Pages/Campaigns";
 import CampaignDetails from "./Pages/Campaigns/CampaignDetails";
 import BiddingForms from "./Pages/Campaigns/BiddingForms";
-import CreatorDashboard from "./Pages/Dashboard/CreatorDashboard";
+import CreatorsDashboard from "./Pages/Dashboard/CreatorsDashboard";
+import WorkingCampaign from "./Pages/Dashboard/WorkingCampaign";
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
         <Route path="campaigns" element={<FindCampaigns />} />
         <Route path="campaign/:id" element={<CampaignDetails />} />
         <Route path="bid" element={<BiddingForms />} />
-        <Route path="creator-dashboard" element={<CreatorDashboard />} />
+        <Route path="creator-dashboard" element={<CreatorsDashboard />} />
+        <Route path="working-campaign/:id" element={<WorkingCampaign />} />
       </Routes>
       <ScrollToTop />
     </div>

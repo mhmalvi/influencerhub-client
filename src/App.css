@@ -258,6 +258,22 @@ modal-close:hover {
   background-color: rgba(54, 67, 72, 0.8);
 } */
 
+/* For creators dashboard */
 .creator-campaigns {
   height: calc(100vh - 20rem);
+}
+
+/* Handle Global Link tag */
+a {
+  color: black !important;
+}
+
+a:hover {
+  color: black !important;
+}
+
+.drag-drop{
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
 }

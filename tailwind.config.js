@@ -16,14 +16,19 @@ module.exports = {
         50: "12.5rem",
         68: "18rem",
         73: "18.4rem",
+        79: "19rem",
         82: "20.5rem",
         86: "22.3rem",
+        98: "25.7rem",
       },
       height: {
         22: "5.5rem",
         29: "7.5rem",
         39: "9.5rem",
         50: "12.5rem",
+        74: "19rem",
+        76: "19.5rem",
+        100: "27rem",
       },
       inset: {
         84: "22rem",
@@ -39,6 +44,7 @@ module.exports = {
         "dark-blue": "#151D48",
         "milky-white": "#F5F5F5",
         "light-gray": "rgba(51, 51, 51, 0.75)",
+        "sea-green": "#3F729B",
       },
       lineHeight: {
         4.5: "1.125rem",
