@@ -9,6 +9,7 @@ import Replay from "./Replay";
 
 const WorkingCampaign = () => {
   const [fileList, setFileList] = useState([]);
+  const [ifBrand, setIfBrand] = useState(true);
 
   const handleChange = (info) => {
     let newFileList = [...info.fileList];
@@ -64,7 +65,7 @@ const WorkingCampaign = () => {
               </div>
 
               <div className="flex items-center text-xs">
-                <div className="flex items-center mr-3 leading-5">
+                <div className="flex items-center mr-8 leading-5">
                   <Icons.PeopleFilled className="w-4 text-black mr-2" />
                   <span className="text-xs font-light">30</span>
                 </div>
@@ -86,7 +87,9 @@ const WorkingCampaign = () => {
               </h2>
               <Icons.BorderStock className="w-full" />
             </div>
-            <div className="mt-2">
+            <div className="mt-2 overflow-y-auto h-92">
+              <Creators />
+              <Creators />
               <Creators />
               <Creators />
               <Creators />
@@ -134,7 +137,7 @@ const WorkingCampaign = () => {
               <Icons.BorderStock className="w-86" />
             </div>
 
-            <div className="mt-2 h-76 overflow-y-auto">
+            <div className={`mt-2 ${ifBrand && "h-68"} h-76 overflow-y-auto`}>
               <div className="flex w-11/12 mr-auto px-4 mb-2">
                 <img
                   className="w-6 h-6 mx-2 rounded-full"
@@ -151,15 +154,32 @@ const WorkingCampaign = () => {
               </div>
             </div>
             <div className="w-full flex justify-center items-center">
-              <Upload {...props} fileList={fileList}>
-                <button
-                  className="py-3 px-20 text-xs font-light rounded-xl bg-blue-600 text-white flex justify-center items-center"
-                  type="submit"
-                >
-                  <Icons.Clip className="mr-4" />
-                  Attach file
-                </button>
-              </Upload>
+              {ifBrand ? (
+                <div>
+                  <button
+                    className="w-60 py-3 text-xs font-light rounded-xl bg-blue-600 text-white flex justify-center items-center mb-2"
+                    type="submit"
+                  >
+                    Done
+                  </button>
+                  <button
+                    className="w-60 py-3 text-xs font-light rounded-xl bg-dark-blue text-white flex justify-center items-center"
+                    type="submit"
+                  >
+                    Recreate
+                  </button>
+                </div>
+              ) : (
+                <Upload {...props} fileList={fileList}>
+                  <button
+                    className="py-3 px-20 text-xs font-light rounded-xl bg-blue-600 text-white flex justify-center items-center"
+                    type="submit"
+                  >
+                    <Icons.Clip className="mr-4" />
+                    Attach file
+                  </button>
+                </Upload>
+              )}
             </div>
           </div>
         </div>

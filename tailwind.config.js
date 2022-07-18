@@ -26,8 +26,10 @@ module.exports = {
         29: "7.5rem",
         39: "9.5rem",
         50: "12.5rem",
+        68: "17rem",
         74: "19rem",
         76: "19.5rem",
+        92: "23rem",
         100: "27rem",
       },
       inset: {
