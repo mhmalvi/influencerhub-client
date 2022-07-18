@@ -158,7 +158,7 @@
 
 /* For cmpaigns */
 .cmpaigns {
-  height: 65vh;
+  height: calc(100vh - 20rem);
 }
 
 ::-webkit-scrollbar {
@@ -259,5 +259,5 @@ modal-close:hover {
 } */
 
 .creator-campaigns {
-  height: calc(100vh - 320px);
+  height: calc(100vh - 20rem);
 }
