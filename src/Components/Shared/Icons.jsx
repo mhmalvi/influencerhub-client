@@ -18,7 +18,10 @@ import { ReactComponent as Tiktok } from "../../assets/Icons/tiktok.svg";
 import { ReactComponent as OutlineFacebook } from "../../assets/Icons/outline_facebook.svg";
 import { ReactComponent as PeopleFilled } from "../../assets/Icons/people-filled.svg";
 import { ReactComponent as BorderStock } from "../../assets/Icons/border-strock.svg";
+import { ReactComponent as VerticalBorderStock } from "../../assets/Icons/vertical-border-stoke.svg";
 import { ReactComponent as Clip } from "../../assets/Icons/clip.svg";
+import { ReactComponent as Edit } from "../../assets/Icons/edit-icon.svg";
+import { ReactComponent as PlusCircle } from "../../assets/Icons/plus-circle.svg";
 
 const Icons = {
   Facebook,
@@ -42,6 +45,9 @@ const Icons = {
   PeopleFilled,
   BorderStock,
   Clip,
+  Edit,
+  VerticalBorderStock,
+  PlusCircle,
 };
 
 export default Icons;

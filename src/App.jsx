@@ -12,6 +12,7 @@ import CampaignDetails from "./Pages/Campaigns/CampaignDetails";
 import BiddingForms from "./Pages/Campaigns/BiddingForms";
 import CreatorsDashboard from "./Pages/Dashboard/CreatorsDashboard";
 import WorkingCampaign from "./Pages/Dashboard/WorkingCampaign";
+import Settings from "./Pages/Settings";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="bid" element={<BiddingForms />} />
         <Route path="creator-dashboard" element={<CreatorsDashboard />} />
         <Route path="working-campaign/:id" element={<WorkingCampaign />} />
+        <Route path="settings/:username" element={<Settings />} />
       </Routes>
       <ScrollToTop />
     </div>

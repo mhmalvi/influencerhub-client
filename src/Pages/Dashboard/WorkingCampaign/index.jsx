@@ -8,8 +8,8 @@ import Message from "./Message";
 import Replay from "./Replay";
 
 const WorkingCampaign = () => {
-  const [fileList, setFileList] = useState([]);
   const [ifBrand, setIfBrand] = useState(true);
+  const [fileList, setFileList] = useState([]);
 
   const handleChange = (info) => {
     let newFileList = [...info.fileList];
@@ -159,6 +159,7 @@ const WorkingCampaign = () => {
                   <button
                     className="w-60 py-3 text-xs font-light rounded-xl bg-blue-600 text-white flex justify-center items-center mb-2"
                     type="submit"
+                    onClick={() => setIfBrand(!ifBrand)}
                   >
                     Done
                   </button>
