@@ -33,18 +33,35 @@
   width: 45vw;
 }
 
-.btn-grad {
+/* .btn-grad {
   background-image: linear-gradient(84.75deg, #0074d1 0%, #d100d1 100%);
   -webkit-transition: background-image 2s ease-out;
   -moz-transition: background-image 2s ease-out;
   -o-transition: background-image 2s ease-out;
   transition: background-image 2s ease-out;
   z-index: 1;
+} */
+
+.btn-grad {
+  cursor: pointer;
+  color: white;
+  background-image: linear-gradient(84.75deg, #0074d1 0%, #d100d1 100%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: background-position 0.7s ease-in-out;
 }
 
-.btn-grad-reverse {
+.btn-grad:hover {
   background-image: linear-gradient(84.75deg, #d100d1 0%, #0074d1 100%);
+  background-position: 0 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 0.7s ease-in-out;
 }
+
+/* .btn-grad-reverse {
+  background-image: linear-gradient(84.75deg, #d100d1 0%, #0074d1 100%);
+  transition: background-image 3s ease-in-out;
+} */
 
 .demand-marketing-img {
   height: 25rem;
@@ -264,15 +281,15 @@ modal-close:hover {
 }
 
 /* Handle Global Link tag */
-a {
+/* a {
   color: black !important;
 }
 
 a:hover {
   color: black !important;
-}
+} */
 
-.drag-drop{
+.drag-drop {
   background-color: transparent !important;
   border: none !important;
   outline: none !important;

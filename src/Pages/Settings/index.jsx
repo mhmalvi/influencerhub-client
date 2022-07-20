@@ -1,11 +1,12 @@
 import { Upload } from "antd";
-import React, { useState } from "react";
+import { useState } from "react";
 import Icons from "../../Components/Shared/Icons";
-import NavbarSm from "../../Components/Shared/Navbar/NavbarSm";
+import Navbar from "../../Components/Shared/Navbar";
 import BusinessInformation from "./BusinessInformation";
+import Notification from "./Notification";
 import Profile from "./Profile";
 import SocialSetiing from "./SocialField";
-import Notification from "./Notification";
+import Verification from "./Verification";
 
 const Settings = () => {
   const [fileList, setFileList] = useState([]);
@@ -64,39 +65,39 @@ const Settings = () => {
   };
 
   return (
-    <div className="page-width mx-auto font-mulish">
-      <div className="float-right px-24">
-        <NavbarSm loggedin={true} />
+    <div className='page-width mx-auto font-mulish'>
+      <div className='ml-4'>
+        <Navbar loggedin={true} />
       </div>
-      <div className="mx-30">
+      <div className='mx-30'>
         <div>
           <img
-            className="shadow-md rounded-tl-2xl rounded-tr-2xl"
-            src="https://i.ibb.co/k6kMjq0/Rectangle-6611.jpg"
-            alt=""
+            className='shadow-md rounded-tl-2xl rounded-tr-2xl'
+            src='https://i.ibb.co/k6kMjq0/Rectangle-6611.jpg'
+            alt=''
           />
-          <div className="ml-auto mr-4 w-4 cursor-pointer -mt-8">
+          <div className='ml-auto mr-4 w-4 cursor-pointer -mt-8'>
             <Upload {...props} fileList={fileList}>
-              <Icons.Edit className="w-4" />
+              <Icons.Edit className='w-4' />
             </Upload>
           </div>
         </div>
-        <div className="w-29 h-29 ml-16 -mt-16 flex flex-col justify-center items-center">
+        <div className='w-29 h-29 ml-16 -mt-16 flex flex-col justify-center items-center'>
           <img
-            className="rounded-full"
-            src="https://i.ibb.co/HFNyMtV/Rectangle-6614.png"
-            alt=""
+            className='rounded-full'
+            src='https://i.ibb.co/HFNyMtV/Rectangle-6614.png'
+            alt=''
           />
-          <div className="-mt-7">
+          <div className='-mt-7'>
             <Upload {...props} fileList={fileList}>
-              <Icons.Edit className="cursor-pointer" />
+              <Icons.Edit className='cursor-pointer' />
             </Upload>
           </div>
         </div>
-        <div className="w-full bg-white shadow-md -mt-16 pb-10">
-          <div className="w-60 pt-20 px-24 pb-24 flex justify-between items-start">
+        <div className='w-full bg-white shadow-md -mt-16 pb-10'>
+          <div className='w-60 pt-20 px-24 pb-24 flex justify-between items-start'>
             {/* Profile Details  */}
-            <div className="">
+            <div className=''>
               {settingsOptions.map((option) => (
                 <h4
                   key={option.id}
@@ -110,22 +111,20 @@ const Settings = () => {
               ))}
             </div>
             <div>
-              <Icons.VerticalBorderStock className="mx-10" />
+              <Icons.VerticalBorderStock className='mx-10' />
             </div>
             {/*  Settings  */}
             {activeOption === "profile" && <Profile />}
             {activeOption === "social" && <SocialSetiing />}
             {activeOption === "business" && <BusinessInformation />}
             {activeOption === "notification" && <Notification />}
-            {/* <SocialSetiing /> */}
-            {/* <BusinessInformation /> */}
-            {/* <Notification /> */}
+            {activeOption === "verification" && <Verification />}
           </div>
-          <div className="w-full">
+          <div className='w-full'>
             <img
-              className="w-50 h-24 ml-16 -mt-20 rounded-xl bg-red-300"
-              src="https://i.ibb.co/mv3PtqF/Rectangle-6616.jpg"
-              alt=""
+              className='w-50 h-24 ml-16 -mt-20 rounded-xl bg-red-300'
+              src='https://i.ibb.co/mv3PtqF/Rectangle-6616.jpg'
+              alt=''
             />
           </div>
         </div>
