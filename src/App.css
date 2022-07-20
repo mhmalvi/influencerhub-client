@@ -315,3 +315,9 @@ a:hover {
   width: 1.3rem !important;
   height: 1.3rem !important;
 }
+
+@media (min-width: 1080px) and (max-width: 1400px) {
+  .creator-dashboard {
+    margin-left: -16rem !important;
+  }
+}

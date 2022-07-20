@@ -13,20 +13,22 @@ import BiddingForms from "./Pages/Campaigns/BiddingForms";
 import CreatorsDashboard from "./Pages/Dashboard/CreatorsDashboard";
 import WorkingCampaign from "./Pages/Dashboard/WorkingCampaign";
 import Settings from "./Pages/Settings";
+import CreateCampain from "./Pages/Campaigns/CreateCampain";
 
 function App() {
   return (
-    <div className="bg-white">
+    <div className='bg-white'>
       <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="login" element={<Login />} />
-        <Route path="signup" element={<Signup />} />
-        <Route path="campaigns" element={<FindCampaigns />} />
-        <Route path="campaign/:id" element={<CampaignDetails />} />
-        <Route path="bid" element={<BiddingForms />} />
-        <Route path="creator-dashboard" element={<CreatorsDashboard />} />
-        <Route path="working-campaign/:id" element={<WorkingCampaign />} />
-        <Route path="settings/:username" element={<Settings />} />
+        <Route path='/' element={<LandingPage />} />
+        <Route path='login' element={<Login />} />
+        <Route path='signup' element={<Signup />} />
+        <Route path='campaigns' element={<FindCampaigns />} />
+        <Route path='campaign/:id' element={<CampaignDetails />} />
+        <Route path='bid/:id' element={<BiddingForms />} />
+        <Route path='creator-dashboard' element={<CreatorsDashboard />} />
+        <Route path='working-campaign/:id' element={<WorkingCampaign />} />
+        <Route path='settings/:username' element={<Settings />} />
+        <Route path='create-campaign' element={<CreateCampain />} />
       </Routes>
       <ScrollToTop />
     </div>
