@@ -294,3 +294,24 @@ a:hover {
   border: none !important;
   outline: none !important;
 }
+
+.pass-inpt {
+  width: 15rem !important;
+  border: none !important;
+  outline: none !important;
+  padding-left: 0 !important;
+  color: rgba(51, 51, 51, 0.75) !important;
+  border-bottom: 0.15px solid rgba(51, 51, 51, 0.25) !important;
+  padding-right: 2rem;
+}
+
+.pass-inpt:active {
+  outline: none !important;
+}
+
+[data-icon="eye-invisible"],
+[data-icon="eye"] {
+  color: black !important;
+  width: 1.3rem !important;
+  height: 1.3rem !important;
+}

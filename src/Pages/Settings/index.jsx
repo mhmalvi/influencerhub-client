@@ -5,12 +5,13 @@ import Navbar from "../../Components/Shared/Navbar";
 import BusinessInformation from "./BusinessInformation";
 import Notification from "./Notification";
 import Profile from "./Profile";
+import Security from "./Security";
 import SocialSetiing from "./SocialField";
 import Verification from "./Verification";
 
 const Settings = () => {
   const [fileList, setFileList] = useState([]);
-  const [activeOption, setActiveOption] = useState("profile");
+  const [activeOption, setActiveOption] = useState("security");
 
   const settingsOptions = [
     {
@@ -119,6 +120,7 @@ const Settings = () => {
             {activeOption === "business" && <BusinessInformation />}
             {activeOption === "notification" && <Notification />}
             {activeOption === "verification" && <Verification />}
+            {activeOption === "security" && <Security />}
           </div>
           <div className='w-full'>
             <img
