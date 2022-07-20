@@ -22,7 +22,6 @@ import { ReactComponent as VerticalBorderStock } from "../../assets/Icons/vertic
 import { ReactComponent as Clip } from "../../assets/Icons/clip.svg";
 import { ReactComponent as Edit } from "../../assets/Icons/edit-icon.svg";
 import { ReactComponent as PlusCircle } from "../../assets/Icons/plus-circle.svg";
-import { ReactComponent as CloseEye } from "../../assets/Icons/close-eye.svg";
 
 const Icons = {
   Facebook,
@@ -49,7 +48,6 @@ const Icons = {
   Edit,
   VerticalBorderStock,
   PlusCircle,
-  CloseEye,
 };
 
 export default Icons;
