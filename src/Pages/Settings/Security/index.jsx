@@ -1,6 +1,7 @@
 import React from "react";
 import Icons from "../../../Components/Shared/Icons";
 import { Input } from "antd";
+import { Link } from "react-router-dom";
 
 const Security = () => {
   return (
@@ -39,19 +40,13 @@ const Security = () => {
             <Input.Password className='pass-inpt' placeholder='********' />{" "}
           </div>
         </div>
-
-        {/* <div className='ml-16 flex flex-col justify-evenly text-base font-semibold items-start text-gray-500'>
-          <div className='my-2'>
-            <div>
-              <Icons.CloseEye className='cursor-pointer' />
-            </div>
-          </div>
-          <div className='my-2'>
-            <div>
-              <Icons.CloseEye className='cursor-pointer' />
-            </div>
-          </div>
-        </div> */}
+      </div>
+      <div>
+        <Link to={"/settings/souraav"}>
+          <p className='font-medium text-base leading-6 text-blue-400 text-right mr-48'>
+            Forgot
+          </p>
+        </Link>
       </div>
 
       <div className='float-right'>
