@@ -23,7 +23,6 @@ const CreatorsDashboard = () => {
             <div className='w-86'>
               <img className='z-0 h-screen' src={dashboardBg} alt='' />
             </div>
-            {/* <div className="md:-ml-56 xl:-ml-44 2xl:-ml-44 mt-36"> */}
             <div className='creator-dashboard md:-ml-56 xl:-ml-44 2xl:-ml-44 mt-36'>
               <div>
                 <img className='rounded-lg mb-16' src={dashboardImg} alt='' />

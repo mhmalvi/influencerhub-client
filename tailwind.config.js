@@ -16,6 +16,7 @@ module.exports = {
         42: "10.75rem",
         50: "12.5rem",
         58: "14.5rem",
+        66: "16.32rem",
         68: "18rem",
         73: "18.4rem",
         79: "19rem",
@@ -43,6 +44,7 @@ module.exports = {
         21: "5.5rem",
         27: "6.875rem",
         30: "7.5rem",
+        46: "11.5rem",
       },
       colors: {
         "dark-blue": "#151D48",
@@ -58,7 +60,6 @@ module.exports = {
         29: "7.125rem",
         30: "7.5rem",
       },
-      
     },
   },
   plugins: [],
