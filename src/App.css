@@ -241,53 +241,9 @@
   text-align: center;
 }
 
-/* .close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: transparent;
-} */
-/* 
-.modal_content {
-  border-bottom: 1px solid #dddddd;
-  padding: 2rem 0;
-}
-
-.modal_footer {
-  padding: 2rem 0;
-  padding-bottom: 0;
-} */
-/* 
-.modal-close {
-  background-color: transparent;
-  font-weight: 600;
-}
-modal-close:hover {
-  color: rgba(54, 67, 72, 0.8);
-}
-
-.submit {
-  margin-right: 1rem;
-  background-color: #364348;
-  color: #fff;
-}
-.submit:hover {
-  background-color: rgba(54, 67, 72, 0.8);
-} */
-
-/* For creators dashboard */
 .creator-campaigns {
   height: calc(100vh - 20rem);
 }
-
-/* Handle Global Link tag */
-/* a {
-  color: black !important;
-}
-
-a:hover {
-  color: black !important;
-} */
 
 .drag-drop {
   background-color: transparent !important;
@@ -314,6 +270,38 @@ a:hover {
   color: black !important;
   width: 1.3rem !important;
   height: 1.3rem !important;
+}
+
+input[type="radio"]::after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+input[type="radio"]:checked::after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #151515;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+::-webkit-calendar-picker-indicator {
+  background-image: url(./assets/Icons/calender.svg);
 }
 
 @media (min-width: 1080px) and (max-width: 1400px) {

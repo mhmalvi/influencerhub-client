@@ -23,6 +23,7 @@ import { ReactComponent as Clip } from "../../assets/Icons/clip.svg";
 import { ReactComponent as Edit } from "../../assets/Icons/edit-icon.svg";
 import { ReactComponent as PlusCircle } from "../../assets/Icons/plus-circle.svg";
 import { ReactComponent as DoubleClip } from "../../assets/Icons/double-clip.svg";
+import { ReactComponent as CreateCreatorBorder } from "../../assets/Icons/create-creator-border-stoke.svg";
 
 const Icons = {
   Facebook,
@@ -50,6 +51,7 @@ const Icons = {
   VerticalBorderStock,
   PlusCircle,
   DoubleClip,
+  CreateCreatorBorder,
 };
 
 export default Icons;
