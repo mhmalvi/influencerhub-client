@@ -52,7 +52,7 @@ const CampaignInfo = () => {
 
   return (
     <div className="flex justify-between items-center">
-      <div className="mr-6 ml-18  ">
+      <div className="mr-6 ml-14">
         <Icons.CreateCreatorBorder />
       </div>
       <div>
