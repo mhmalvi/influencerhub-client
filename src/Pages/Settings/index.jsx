@@ -112,7 +112,7 @@ const Settings = () => {
               ))}
             </div>
             <div>
-              <Icons.VerticalBorderStock className="mx-10" />
+              <Icons.VerticalBorderStock className="mx-20" />
             </div>
             {/*  Settings  */}
             {activeOption === "profile" && <Profile />}
