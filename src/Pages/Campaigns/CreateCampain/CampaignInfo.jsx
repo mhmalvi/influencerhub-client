@@ -52,7 +52,7 @@ const CampaignInfo = () => {
 
   return (
     <div className="flex justify-between items-center">
-      <div className="mr-6 ml-14">
+      <div className="mr-6 ml-10">
         <Icons.CreateCreatorBorder />
       </div>
       <div>
@@ -86,7 +86,7 @@ const CampaignInfo = () => {
             <p className="m-0 py-1 text-base text-gray-400 font-semibold">
               PDF OR JPG
             </p>
-            <Icons.DoubleClip className="p-1 bg-white shadow-md text-black w-5 rounded" />
+            <Icons.DoubleClip className="p-1 mb-1 bg-white shadow text-black w-5 rounded" />
           </label>
           <input id="attached" hidden type="file" />
         </div>
