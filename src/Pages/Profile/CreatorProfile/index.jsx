@@ -275,11 +275,10 @@ const CreatorProfile = () => {
           data={data}
           margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
         >
-          <CartesianGrid strokeDasharray='3 3' />
           <XAxis dataKey='name' />
           <YAxis />
           <Tooltip />
-          <Legend />
+          <Legend layout='vetical' verticalAlign='top' align='right'  />
           <Line
             activeDot={{ color: "#FFFFFF", r: 7, cursor: "pointer" }}
             dot={false}
