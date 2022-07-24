@@ -15,6 +15,7 @@ import WorkingCampaign from "./Pages/Dashboard/WorkingCampaign";
 import Settings from "./Pages/Settings";
 import CreateCampain from "./Pages/Campaigns/CreateCampain";
 import BiddingList from "./Pages/Campaigns/BidCampaign/BiddingList";
+import CompletedCampaigns from "./Pages/Campaigns/CompletedCampaigns";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="working-campaign/:id" element={<WorkingCampaign />} />
         <Route path="settings/:username" element={<Settings />} />
         <Route path="create-campaign" element={<CreateCampain />} />
+        <Route path="completed-campaigns" element={<CompletedCampaigns/>} />
       </Routes>
       <ScrollToTop />
     </div>
