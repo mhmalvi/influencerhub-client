@@ -57,6 +57,7 @@ module.exports = {
         "dark-blue": "#151D48",
         "milky-white": "#F5F5F5",
         "light-gray": "rgba(51, 51, 51, 0.75)",
+        "dark-gray": "#333333",
         "sea-green": "#3F729B",
       },
       lineHeight: {

@@ -17,6 +17,7 @@ import CreateCampain from "./Pages/Campaigns/CreateCampain";
 import BiddingList from "./Pages/Campaigns/BidCampaign/BiddingList";
 import CompletedCampaigns from "./Pages/Campaigns/CompletedCampaigns";
 import BrandProfile from "./Pages/Profile/BrandProfile";
+import CreatorProfile from "./Pages/Profile/CreatorProfile";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="create-campaign" element={<CreateCampain />} />
         <Route path="completed-campaigns" element={<CompletedCampaigns />} />
         <Route path="brand-profile" element={<BrandProfile />} />
+        <Route path="creator-profile" element={<CreatorProfile />} />
       </Routes>
       <ScrollToTop />
     </div>

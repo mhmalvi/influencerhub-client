@@ -295,6 +295,25 @@ input[type="radio"]:checked::after {
   background-image: url(./assets/Icons/calender.svg);
 }
 
+.avatar-bg {
+  background-image: url(./assets/Images/avatar-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rotate {
+  animation: rotation 2s linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 @media (min-width: 1080px) and (max-width: 1400px) {
   .creator-dashboard {
     margin-left: -16rem !important;

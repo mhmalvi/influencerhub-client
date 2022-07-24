@@ -9,7 +9,7 @@ const BrandProfile = () => {
         <Navbar loggedin={true} />
       </div>
       <div className="px-30 flex items-start">
-        <div className="w-81 felx justify-center items-start shadow rounded-xl px-3.5 pb-10 pt-4">
+        <div className="w-81 felx justify-center items-start shadow rounded-3xl px-3.5 pb-10 pt-4">
           <div className="flex flex-col justify-center items-center">
             <img
               className="rounded-2xl h-25"
