@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Icons from "../../Components/Shared/Icons";
-import Modal from "../../Components/Shared/Modal";
-import NavbarSm from "../../Components/Shared/Navbar/NavbarSm";
+import Icons from "../../../Components/Shared/Icons";
+import Modal from "../../../Components/Shared/Modal";
+import NavbarSm from "../../../Components/Shared/Navbar/NavbarSm";
 
 const BiddingForms = () => {
   const [popUp, setPopUp] = useState(false);

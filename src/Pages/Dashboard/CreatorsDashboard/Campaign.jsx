@@ -1,8 +1,8 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-import Icons from '../../../Components/Shared/Icons';
+import React from "react";
+import { Link } from "react-router-dom";
+import Icons from "../../../Components/Shared/Icons";
 
-const Campaign = ({campaign}) => {
+const Campaign = ({ campaign }) => {
   return (
     <Link
       to={"/working-campaign/1"}
@@ -30,19 +30,19 @@ const Campaign = ({campaign}) => {
           </div>
           <div className="flex items-center">
             <Link to={"/"}>
-              <Icons.Tiktok className="w-5 text-gray-400" />
+              <Icons.Tiktok className="w-4 text-gray-500" />
             </Link>
             <Link to={"/"}>
               <Icons.Instagram className="w-4 text-gray-400 mx-1" />
             </Link>
             <Link to={"/"}>
-              <Icons.OutlineFacebook className="w-4 text-gray-500 ml-0.5" />
+              <Icons.OutlineFacebook className="w-4 text-gray-400 ml-0.5" />
             </Link>
           </div>
         </div>
       </div>
     </Link>
   );
-}
+};
 
-export default Campaign
+export default Campaign;
