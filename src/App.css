@@ -305,6 +305,31 @@ input[type="radio"]:checked::after {
   animation: rotation 2s linear;
 }
 
+.graph-toolkit-wrap {
+  filter: drop-shadow(-1px 3px 10px rgba(126, 126, 126, 0.428));
+}
+.graph-toolkit {
+  -webkit-clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    59% 75%,
+    49% 100%,
+    39% 74%,
+    0 74%
+  );
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    59% 75%,
+    49% 100%,
+    39% 74%,
+    0 74%
+  );
+  border: 10px;
+}
+
 @keyframes rotation {
   from {
     transform: rotate(0deg);

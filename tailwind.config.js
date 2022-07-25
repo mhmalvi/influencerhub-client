@@ -43,6 +43,8 @@ module.exports = {
         100: "27rem",
       },
       inset: {
+        15: "3.65rem",
+        22: "5.7rem",
         84: "22rem",
       },
       padding: {
