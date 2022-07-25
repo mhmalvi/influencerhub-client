@@ -29,7 +29,6 @@ const ViewsGraph = ({ data }) => {
         data={data}
         margin={{ top: 50, right: 40, left: 20, bottom: 5 }}
       >
-        {/* <Title text="Title" /> */}
         <XAxis dataKey="name" axisLine={false} />
         <YAxis axisLine={false} />
         <Tooltip content={<CustomToolTipViewsGraph />} />

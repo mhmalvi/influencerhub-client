@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "../../../Components/Shared/Navbar";
+import AgeGraph from "./AgeGraph";
 import FollowersGraph from "./FollowersGraph";
+import GenderGraph from "./GenderGraph";
 import ViewsGraph from "./ViewsGraph";
 
 const CreatorProfile = () => {
@@ -52,6 +54,17 @@ const CreatorProfile = () => {
       Posts: 3490,
       Views: 4300,
       amt: 2100,
+    },
+  ];
+
+  const data01 = [
+    {
+      name: "Group A",
+      value: 400,
+    },
+    {
+      name: "Group B",
+      value: 300,
     },
   ];
 
@@ -264,6 +277,11 @@ const CreatorProfile = () => {
       </div>
       <div>
         <FollowersGraph data={data} />
+      </div>
+
+      <div className="mx-30 pb-16 flex justify-center">
+        <GenderGraph data01={data01} />
+        <AgeGraph/>
       </div>
     </div>
   );
