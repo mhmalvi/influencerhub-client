@@ -5,7 +5,7 @@ const GenderGraph = ({ data01 }) => {
   const COLORS = ["#D100D1", "#0074D1"];
 
   return (
-    <div className="w-98 rounded-xl border border-gray-400">
+    <div className="w-98 rounded-xl border border-gray-300">
       <h2 className="text-2xl font-mulish leading-8 font-normal text-center mt-8 mb-6">
         Gender
       </h2>

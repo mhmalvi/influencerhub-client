@@ -1,23 +1,22 @@
-import "./App.css";
 import "antd/dist/antd.css";
-import { Routes, Route } from "react-router-dom";
-import LandingPage from "./Pages/LandingPage";
-import ScrollToTop from "./Components/Shared/ScrollToTop";
-import Login from "./Pages/Login";
-import "slick-carousel/slick/slick.css";
+import { Route, Routes } from "react-router-dom";
 import "slick-carousel/slick/slick-theme.css";
-import Signup from "./Pages/Signup";
+import "slick-carousel/slick/slick.css";
+import "./App.css";
 import FindCampaigns from "./Pages/Campaigns";
-import CampaignDetails from "./Pages/Campaigns/CampaignDetails";
 import BiddingForms from "./Pages/Campaigns/BidCampaign/BiddingForms";
+import BiddingList from "./Pages/Campaigns/BidCampaign/BiddingList";
+import CampaignDetails from "./Pages/Campaigns/CampaignDetails";
+import CompletedCampaigns from "./Pages/Campaigns/CompletedCampaigns";
+import CreateCampain from "./Pages/Campaigns/CreateCampain";
 import CreatorsDashboard from "./Pages/Dashboard/CreatorsDashboard";
 import WorkingCampaign from "./Pages/Dashboard/WorkingCampaign";
-import Settings from "./Pages/Settings";
-import CreateCampain from "./Pages/Campaigns/CreateCampain";
-import BiddingList from "./Pages/Campaigns/BidCampaign/BiddingList";
-import CompletedCampaigns from "./Pages/Campaigns/CompletedCampaigns";
+import LandingPage from "./Pages/LandingPage";
+import Login from "./Pages/Login";
 import BrandProfile from "./Pages/Profile/BrandProfile";
 import CreatorProfile from "./Pages/Profile/CreatorProfile";
+import Settings from "./Pages/Settings";
+import Signup from "./Pages/Signup";
 
 function App() {
   return (
@@ -38,7 +37,6 @@ function App() {
         <Route path="brand-profile" element={<BrandProfile />} />
         <Route path="creator-profile" element={<CreatorProfile />} />
       </Routes>
-      <ScrollToTop />
     </div>
   );
 }

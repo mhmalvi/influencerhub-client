@@ -3,7 +3,7 @@ import { Line, LineChart, Tooltip, XAxis, YAxis } from "recharts";
 
 const ViewsGraph = ({ data }) => {
   return (
-    <div className="mt-14 mx-30 rounded-xl border border-gray-400">
+    <div className="mt-14 mx-30 rounded-xl border border-gray-300">
       <div className="flex items-center justify-between mx-8 mt-8">
         <h2 className="text-2xl font-mulish leading-8 font-normal">
           Views preview

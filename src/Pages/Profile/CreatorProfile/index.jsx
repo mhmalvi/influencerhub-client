@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "../../../Components/Shared/Navbar";
 import AgeGraph from "./AgeGraph";
+import AreaWiseDetails from "./AreaWiseDetails";
+import CompleteCampaigns from "./CompleteCampaigns";
 import FollowersGraph from "./FollowersGraph";
 import GenderGraph from "./GenderGraph";
 import ViewsGraph from "./ViewsGraph";
@@ -154,7 +156,7 @@ const CreatorProfile = () => {
               </button>
             </div>
             <div className="grid grid-cols-4 gap-6 mt-12">
-              <div className="w-38 rounded-xl border-gray-400 py-5 mt-0 px-6 flex flex-col justify-center items-center border">
+              <div className="w-38 rounded-xl border-gray-300 py-5 mt-0 px-6 flex flex-col justify-center items-center border">
                 <h4 className="font-mulish font-semibold text-base leading-5">
                   50,000
                 </h4>
@@ -162,7 +164,7 @@ const CreatorProfile = () => {
                   Follower
                 </p>
               </div>
-              <div className="w-38 rounded-xl border-gray-400 py-5 mt-0 px-6 flex flex-col justify-center items-center border">
+              <div className="w-38 rounded-xl border-gray-300 py-5 mt-0 px-6 flex flex-col justify-center items-center border">
                 <h4 className="font-mulish font-semibold text-base leading-5">
                   25,50,000
                 </h4>
@@ -170,7 +172,7 @@ const CreatorProfile = () => {
                   Like
                 </p>
               </div>
-              <div className="w-38 rounded-xl border-gray-400 py-5 mt-0 px-6 flex flex-col justify-center items-center border">
+              <div className="w-38 rounded-xl border-gray-300 py-5 mt-0 px-6 flex flex-col justify-center items-center border">
                 <h4 className="font-mulish font-semibold text-base leading-5">
                   25,50,000
                 </h4>
@@ -178,7 +180,7 @@ const CreatorProfile = () => {
                   Comment
                 </p>
               </div>
-              <div className="w-38 rounded-xl border-gray-400 py-5 mt-0 px-6 flex flex-col justify-center items-center border">
+              <div className="w-38 rounded-xl border-gray-300 py-5 mt-0 px-6 flex flex-col justify-center items-center border">
                 <h4 className="font-mulish font-semibold text-base leading-5">
                   25,50,000
                 </h4>
@@ -186,7 +188,7 @@ const CreatorProfile = () => {
                   Share
                 </p>
               </div>
-              <div className="w-38 rounded-xl border-gray-400 py-5 mt-0 px-6 flex flex-col justify-center items-center border">
+              <div className="w-38 rounded-xl border-gray-300 py-5 mt-0 px-6 flex flex-col justify-center items-center border">
                 <h4 className="font-mulish font-semibold text-base leading-5">
                   25,50,000
                 </h4>
@@ -194,7 +196,7 @@ const CreatorProfile = () => {
                   Views
                 </p>
               </div>
-              <div className="w-38 rounded-xl border-gray-400 py-5 mt-0 px-6 flex flex-col justify-center items-center border">
+              <div className="w-38 rounded-xl border-gray-300 py-5 mt-0 px-6 flex flex-col justify-center items-center border">
                 <h4 className="font-mulish font-semibold text-base leading-5">
                   20%
                 </h4>
@@ -203,7 +205,7 @@ const CreatorProfile = () => {
                 </p>
               </div>
             </div>
-            <div className="flex justify-between items-start px-16 py-10 border rounded-xl border-gray-400 mt-12">
+            <div className="flex justify-between items-start px-16 py-10 border rounded-xl border-gray-300 mt-12">
               <div className="relative w-50 h-50 flex justify-center items-center">
                 <div className="avatar-bg absolute rotate w-50 h-50 z-0 flex justify-center items-center"></div>
                 <div className=" flex justify-center items-center z-50">
@@ -281,7 +283,13 @@ const CreatorProfile = () => {
 
       <div className="mx-30 pb-16 flex justify-center">
         <GenderGraph data01={data01} />
-        <AgeGraph/>
+        <AgeGraph />
+      </div>
+      <div>
+        <AreaWiseDetails />
+      </div>
+      <div className="py-14">
+        <CompleteCampaigns />
       </div>
     </div>
   );

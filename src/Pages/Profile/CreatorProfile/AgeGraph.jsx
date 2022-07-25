@@ -46,7 +46,7 @@ const AgeGraph = () => {
   });
 
   return (
-    <div className="rounded-xl border border-gray-400 ml-6">
+    <div className="rounded-xl border border-gray-300 ml-6">
       <h2 className="text-2xl font-mulish leading-8 font-normal text-center mt-8 mb-6">
         Age
       </h2>

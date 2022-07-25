@@ -7,6 +7,7 @@ import FeedBacks from "./FeedBacks";
 import WorkShowcase from "./WorkShowcase";
 import Navbar from "../../Components/Shared/Navbar";
 import Footer from "../../Components/Shared/Footer";
+import ScrollToTop from "../../Components/Shared/ScrollToTop";
 
 const LandingPage = () => {
   return (
@@ -19,6 +20,7 @@ const LandingPage = () => {
       <FeedBacks />
       <WorkShowcase />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };

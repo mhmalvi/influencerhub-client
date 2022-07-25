@@ -29,7 +29,7 @@ const FollowersGraph = ({data}) => {
 
   return (
     <div className="mx-30 flex justify-center py-14">
-      <div className="rounded-xl border border-gray-400">
+      <div className="rounded-xl border border-gray-300">
         <div className="w-full flex justify-between items-start px-6 my-10">
           <h2 className="text-2xl font-mulish leading-8 font-normal">
             Follower tendency
