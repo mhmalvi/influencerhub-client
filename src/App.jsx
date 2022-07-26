@@ -17,6 +17,7 @@ import BrandProfile from "./Pages/Profile/BrandProfile";
 import CreatorProfile from "./Pages/Profile/CreatorProfile";
 import Settings from "./Pages/Settings";
 import Signup from "./Pages/Signup";
+import Academy from "./Pages/Academy";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path="completed-campaigns" element={<CompletedCampaigns />} />
         <Route path="brand-profile" element={<BrandProfile />} />
         <Route path="creator-profile" element={<CreatorProfile />} />
+        <Route path="academy" element={<Academy/>} />
       </Routes>
     </div>
   );
