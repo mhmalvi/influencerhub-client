@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import "./App.css";
+import CampaignLists from "./Pages/Admin/CampaignLists";
 import FindCampaigns from "./Pages/Campaigns";
 import BiddingForms from "./Pages/Campaigns/BidCampaign/BiddingForms";
 import BiddingList from "./Pages/Campaigns/BidCampaign/BiddingList";
@@ -38,6 +39,7 @@ function App() {
         <Route path="brand-profile" element={<BrandProfile />} />
         <Route path="creator-profile" element={<CreatorProfile />} />
         <Route path="wallet" element={<Wallet />} />
+        <Route path="admin/campaign-lists" element={<CampaignLists />} />
       </Routes>
     </div>
   );

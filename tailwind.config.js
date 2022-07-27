@@ -53,6 +53,7 @@ module.exports = {
         84: "22rem",
       },
       padding: {
+        7.5: "1.875rem",
         13: "3.125rem",
         18: "4.5rem",
         21: "5.5rem",
@@ -72,6 +73,7 @@ module.exports = {
         12: "3.125rem",
       },
       margin: {
+        7.5: "1.875rem",
         18: "4.5rem",
         29: "7.125rem",
         30: "7.5rem",

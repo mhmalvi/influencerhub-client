@@ -25,6 +25,7 @@ import { ReactComponent as PlusCircle } from "../../assets/Icons/plus-circle.svg
 import { ReactComponent as DoubleClip } from "../../assets/Icons/double-clip.svg";
 import { ReactComponent as CreateCreatorBorder } from "../../assets/Icons/create-creator-border-stoke.svg";
 import { ReactComponent as Youtube } from "../../assets/Icons/youtube.svg";
+import { ReactComponent as Send } from "../../assets/Icons/send-icon.svg";
 
 const Icons = {
   Facebook,
@@ -54,6 +55,7 @@ const Icons = {
   DoubleClip,
   CreateCreatorBorder,
   Youtube,
+  Send,
 };
 
 export default Icons;
