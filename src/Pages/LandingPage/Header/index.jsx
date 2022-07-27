@@ -35,7 +35,7 @@ const Header = () => {
       <div className="absolute right-0 top-0 rounded-tl-3xl rounded-bl-3xl">
         <img
           className="header-banner rounded-tl-3xl rounded-bl-3xl"
-          src="https://imageio.forbes.com/specials-images/imageserve/5fd3b760a0e32d1889e1d1a3/0x0.jpg?format=jpg&width=1200"
+          src="https://i.ibb.co/nM89vkf/0x0.jpg"
           alt="Banner"
         />
       </div>
