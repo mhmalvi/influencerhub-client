@@ -18,7 +18,11 @@ import BrandProfile from "./Pages/Profile/BrandProfile";
 import CreatorProfile from "./Pages/Profile/CreatorProfile";
 import Settings from "./Pages/Settings";
 import Signup from "./Pages/Signup";
+<<<<<<< HEAD
 import Wallet from "./Pages/Wallets";
+=======
+import Academy from "./Pages/Academy";
+>>>>>>> de60a2cdfcba22259c4d7f8d18336fb7765b61c4
 
 function App() {
   return (
@@ -38,8 +42,12 @@ function App() {
         <Route path="completed-campaigns" element={<CompletedCampaigns />} />
         <Route path="brand-profile" element={<BrandProfile />} />
         <Route path="creator-profile" element={<CreatorProfile />} />
+<<<<<<< HEAD
         <Route path="wallet" element={<Wallet />} />
         <Route path="admin/campaign-lists" element={<CampaignLists />} />
+=======
+        <Route path="academy" element={<Academy/>} />
+>>>>>>> de60a2cdfcba22259c4d7f8d18336fb7765b61c4
       </Routes>
     </div>
   );

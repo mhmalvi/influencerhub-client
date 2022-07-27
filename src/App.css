@@ -358,16 +358,37 @@ input[type="radio"]:checked::after {
   border: 10px;
 }
 
+<<<<<<< HEAD
 .wallet-wrapper {
   background-image: url(https://i.ibb.co/vBDcNns/Rectangle-12.jpg);
+=======
+.delete-message-wrapper {
+  background-image: url(./assets/Images/delete-box.png);
+>>>>>>> de60a2cdfcba22259c4d7f8d18336fb7765b61c4
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+<<<<<<< HEAD
 .balance-wrapper {
   background-image: url(https://c.tenor.com/6Wvo0fNoTJwAAAAC/clouds-anime.gif);
   background-repeat: no-repeat;
   background-size: cover;
+=======
+.delete-message {
+  clip-path: polygon(
+    11% 0,
+    80% 0%,
+    100% 0,
+    100% 100%,
+    10% 99%,
+    10% 59%,
+    0 50%,
+    10% 40%
+  );
+
+  margin: 1px;
+>>>>>>> de60a2cdfcba22259c4d7f8d18336fb7765b61c4
 }
 
 @keyframes rotation {
