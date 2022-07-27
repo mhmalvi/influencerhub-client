@@ -36,7 +36,7 @@ const ViewsGraph = ({ data }) => {
         data={data}
         margin={{ top: 50, right: 40, left: 20, bottom: 5 }}
       >
-        <CartesianGrid yAxis={false} />
+        <CartesianGrid />
         <XAxis dataKey="name" tick={false}  />
         <YAxis axisLine={false} />
         <Tooltip content={<CustomToolTipViewsGraph />} />
