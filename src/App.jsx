@@ -22,6 +22,7 @@ import Wallet from "./Pages/Wallets";
 import Academy from "./Pages/Academy";
 import CaseStudy from "./Pages/Admin/CaseStudy";
 import WorkShowcase from "./Pages/WorkShowcase";
+import Blog from "./Pages/Blog";
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
         <Route path="academy" element={<Academy />} />
         <Route path="case-study" element={<CaseStudy />} />
         <Route path="work-showcase" element={<WorkShowcase />} />
+        <Route path="blog" element={<Blog />} />
       </Routes>
     </div>
   );

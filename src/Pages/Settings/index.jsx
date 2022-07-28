@@ -124,7 +124,7 @@ const Settings = () => {
           </div>
           <div className="w-full">
             <img
-              className="w-50 h-24 ml-16 -mt-20 rounded-xl bg-red-300"
+              className="w-50 h-24 ml-16 -mt-20 rounded-xl"
               src="https://i.ibb.co/mv3PtqF/Rectangle-6616.jpg"
               alt=""
             />
