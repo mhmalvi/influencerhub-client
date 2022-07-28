@@ -39,7 +39,7 @@ const BusinessInformation = () => {
           </div>
           <div className='my-2 flex items-center'>
             <h4>English</h4>
-            <Icons.PlusCircle className='cursor-pointer ml-24' />
+            <Icons.PlusSquare className='cursor-pointer ml-24' />
           </div>
         </div>
       </div>

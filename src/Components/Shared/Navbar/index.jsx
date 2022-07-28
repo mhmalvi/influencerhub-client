@@ -111,7 +111,7 @@ const Navbar = ({ loggedin }) => {
                 <Link to={"/login"} className="mr-5 cursor-pointer">
                   <Icons.Notification />
                 </Link>
-                <Link to={"/find-campaign"} className="mr-5 cursor-pointer">
+                <Link to={"/find-campaign"} className="cursor-pointer">
                   <Dropdown overlay={menu} trigger={["click"]}>
                     <img src={profilePicture} alt="avatar" />
                   </Dropdown>

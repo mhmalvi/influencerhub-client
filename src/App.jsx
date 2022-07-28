@@ -20,6 +20,7 @@ import Settings from "./Pages/Settings";
 import Signup from "./Pages/Signup";
 import Wallet from "./Pages/Wallets";
 import Academy from "./Pages/Academy";
+import CaseStudy from "./Pages/Admin/CaseStudy";
 
 function App() {
   return (
@@ -41,7 +42,8 @@ function App() {
         <Route path="creator-profile" element={<CreatorProfile />} />
         <Route path="wallet" element={<Wallet />} />
         <Route path="admin/campaign-lists" element={<CampaignLists />} />
-        <Route path="academy" element={<Academy/>} />
+        <Route path="academy" element={<Academy />} />
+        <Route path="case-study" element={<CaseStudy />} />
       </Routes>
     </div>
   );

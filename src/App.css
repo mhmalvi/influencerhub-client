@@ -387,8 +387,14 @@ input[type="radio"]:checked::after {
     0 50%,
     10% 40%
   );
-
   margin: 1px;
+}
+
+.case-study-bg {
+  background-image: url(assets/Images/case-study-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
 }
 
 @keyframes rotation {

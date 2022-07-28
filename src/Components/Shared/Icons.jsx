@@ -21,6 +21,7 @@ import { ReactComponent as BorderStock } from "../../assets/Icons/border-strock.
 import { ReactComponent as VerticalBorderStock } from "../../assets/Icons/vertical-border-stoke.svg";
 import { ReactComponent as Clip } from "../../assets/Icons/clip.svg";
 import { ReactComponent as Edit } from "../../assets/Icons/edit-icon.svg";
+import { ReactComponent as PlusSquare } from "../../assets/Icons/plus-square.svg";
 import { ReactComponent as PlusCircle } from "../../assets/Icons/plus-circle.svg";
 import { ReactComponent as DoubleClip } from "../../assets/Icons/double-clip.svg";
 import { ReactComponent as CreateCreatorBorder } from "../../assets/Icons/create-creator-border-stoke.svg";
@@ -52,7 +53,8 @@ const Icons = {
   Clip,
   Edit,
   VerticalBorderStock,
-  PlusCircle,
+  PlusSquare, 
+  PlusCircle, 
   DoubleClip,
   CreateCreatorBorder,
   Youtube,
