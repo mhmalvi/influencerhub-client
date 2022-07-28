@@ -72,9 +72,9 @@ const CampaignLists = () => {
                 className={`text-base font-semibold font-mulish leading-6 cursor-pointer mb-0 ${
                   activeSection === "cancel" ? "text-blue-500" : "text-black"
                 }`}
-                onClick={() => setactiveSection("cancel")}
+                onClick={() => setactiveSection("cancle")}
               >
-                Cancel
+                Cancle
               </p>
             </div>
             <div>
@@ -122,18 +122,36 @@ const CampaignLists = () => {
               <td className="pl-6 pr-10 py-2.5 font-semibold text-base leading-6 font-mulish">
                 Code
               </td>
-              <td className="w-64 py-2.5 font-semibold text-base leading-6 font-mulish">
-                Biding date
-              </td>
+              {activeSection === "bidding" ? (
+                <td className="w-64 py-2.5 font-semibold text-base leading-6 font-mulish">
+                  Biding date
+                </td>
+              ) : (
+                <td className="w-64 py-2.5 font-semibold text-base leading-6 font-mulish">
+                  Campaing dateline
+                </td>
+              )}
               <td className="w-64 py-2.5 whitespace-nowrap font-semibold text-base leading-6 font-mulish">
                 Camping name
               </td>
               <td className="w-48 py-2.5 whitespace-nowrap font-semibold text-base leading-6 font-mulish">
                 Total biding
               </td>
-              <td className="pr-20 py-2.5 whitespace-nowrap font-semibold text-base leading-6 font-mulish">
-                Draft
-              </td>
+              {(activeSection === "bidding" || activeSection === "working") && (
+                <td className="pr-20 py-2.5 whitespace-nowrap font-semibold text-base leading-6 font-mulish">
+                  Draft
+                </td>
+              )}
+              {activeSection === "complete" && (
+                <td className="pr-6 py-2.5 whitespace-nowrap font-semibold text-base leading-6 font-mulish">
+                  Work Showcase
+                </td>
+              )}
+              {activeSection === "cancle" && (
+                <td className="pr-6 py-2.5 whitespace-nowrap font-semibold text-base leading-6 font-mulish">
+                  Reason
+                </td>
+              )}
             </tr>
 
             <tr className="font-normal text-base leading-6 cursor-pointer border">
@@ -153,19 +171,36 @@ const CampaignLists = () => {
               <td className="w-12 pr-10">
                 <div>15</div>
               </td>
-              <td>
-                <div>
-                  <button
-                    className="w-16 py-1 text-white bg-opacity-25 my-2 font-light text-xs leading-5 font-mulish"
-                    style={{
-                      background: "#0074D1",
-                      borderRadius: "12.5px",
-                    }}
-                  >
-                    Live
-                  </button>
-                </div>
-              </td>
+              {(activeSection === "bidding" || activeSection === "working") && (
+                <td>
+                  <div>
+                    <button
+                      className="w-16 py-1 text-white bg-opacity-25 my-2 font-light text-xs leading-5 font-mulish"
+                      style={{
+                        background: "#0074D1",
+                        borderRadius: "12.5px",
+                      }}
+                    >
+                      Live
+                    </button>
+                  </div>
+                </td>
+              )}
+              {(activeSection === "complete" || activeSection === "cancle") && (
+                <td>
+                  <div>
+                    <button
+                      className="w-16 py-1 text-white bg-opacity-25 my-2 font-light text-xs leading-5 font-mulish"
+                      style={{
+                        background: "#0074D1",
+                        borderRadius: "12.5px",
+                      }}
+                    >
+                      View
+                    </button>
+                  </div>
+                </td>
+              )}
             </tr>
 
             <tr className="font-normal text-base leading-6 cursor-pointer border">
@@ -185,19 +220,36 @@ const CampaignLists = () => {
               <td className="w-12 pr-10">
                 <div>15</div>
               </td>
-              <td className="w-22 pr-8 rounded-r-full">
-                <div>
-                  <button
-                    className="w-16 py-1 text-white bg-opacity-25 my-2 font-light text-xs leading-5 font-mulish"
-                    style={{
-                      background: "#D100D1",
-                      borderRadius: "12.5px",
-                    }}
-                  >
-                    Draft
-                  </button>
-                </div>
-              </td>
+              {(activeSection === "bidding" || activeSection === "working") && (
+                <td className="w-22 pr-8 rounded-r-full">
+                  <div>
+                    <button
+                      className="w-16 py-1 text-white bg-opacity-25 my-2 font-light text-xs leading-5 font-mulish"
+                      style={{
+                        background: "#D100D1",
+                        borderRadius: "12.5px",
+                      }}
+                    >
+                      Draft
+                    </button>
+                  </div>
+                </td>
+              )}
+              {(activeSection === "complete" || activeSection === "cancle") && (
+                <td>
+                  <div>
+                    <button
+                      className="w-16 py-1 text-white bg-opacity-25 my-2 font-light text-xs leading-5 font-mulish"
+                      style={{
+                        background: "#0074D1",
+                        borderRadius: "12.5px",
+                      }}
+                    >
+                      View
+                    </button>
+                  </div>
+                </td>
+              )}
             </tr>
 
             <tr className="font-normal text-base leading-6 cursor-pointer border">
@@ -217,19 +269,36 @@ const CampaignLists = () => {
               <td className="w-12 pr-10">
                 <div>15</div>
               </td>
-              <td className="w-22 pr-8 rounded-r-full">
-                <div>
-                  <button
-                    className="w-16 py-1 text-white bg-opacity-25 my-2 font-light text-xs leading-5 font-mulish"
-                    style={{
-                      background: "#0074D1",
-                      borderRadius: "12.5px",
-                    }}
-                  >
-                    Live
-                  </button>
-                </div>
-              </td>
+              {(activeSection === "bidding" || activeSection === "working") && (
+                <td>
+                  <div>
+                    <button
+                      className="w-16 py-1 text-white bg-opacity-25 my-2 font-light text-xs leading-5 font-mulish"
+                      style={{
+                        background: "#0074D1",
+                        borderRadius: "12.5px",
+                      }}
+                    >
+                      Live
+                    </button>
+                  </div>
+                </td>
+              )}
+              {(activeSection === "complete" || activeSection === "cancle") && (
+                <td>
+                  <div>
+                    <button
+                      className="w-16 py-1 text-white bg-opacity-25 my-2 font-light text-xs leading-5 font-mulish"
+                      style={{
+                        background: "#0074D1",
+                        borderRadius: "12.5px",
+                      }}
+                    >
+                      View
+                    </button>
+                  </div>
+                </td>
+              )}
             </tr>
 
             <tr className="font-normal text-base leading-6 cursor-pointer border">
@@ -249,19 +318,36 @@ const CampaignLists = () => {
               <td className="w-12 pr-10">
                 <div>15</div>
               </td>
-              <td className="w-22 pr-8 rounded-r-full">
-                <div>
-                  <button
-                    className="w-16 py-1 text-white bg-opacity-25 my-2 font-light text-xs leading-5 font-mulish"
-                    style={{
-                      background: "#0074D1",
-                      borderRadius: "12.5px",
-                    }}
-                  >
-                    Live
-                  </button>
-                </div>
-              </td>
+              {(activeSection === "bidding" || activeSection === "working") && (
+                <td>
+                  <div>
+                    <button
+                      className="w-16 py-1 text-white bg-opacity-25 my-2 font-light text-xs leading-5 font-mulish"
+                      style={{
+                        background: "#0074D1",
+                        borderRadius: "12.5px",
+                      }}
+                    >
+                      Live
+                    </button>
+                  </div>
+                </td>
+              )}
+              {(activeSection === "complete" || activeSection === "cancle") && (
+                <td>
+                  <div>
+                    <button
+                      className="w-16 py-1 text-white bg-opacity-25 my-2 font-light text-xs leading-5 font-mulish"
+                      style={{
+                        background: "#0074D1",
+                        borderRadius: "12.5px",
+                      }}
+                    >
+                      View
+                    </button>
+                  </div>
+                </td>
+              )}
             </tr>
           </table>
         </div>
