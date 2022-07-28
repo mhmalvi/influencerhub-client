@@ -38,17 +38,17 @@ const SocialSetiing = () => {
         <div className='ml-16 flex flex-col justify-evenly text-base font-semibold items-start text-gray-500'>
           <div className='my-2 flex justify-between items-center'>
             <div>
-              <Icons.PlusCircle className='cursor-pointer' />
+              <Icons.PlusSquare className='cursor-pointer' />
             </div>
           </div>
           <div className='my-2'>
             <div>
-              <Icons.PlusCircle className='cursor-pointer' />
+              <Icons.PlusSquare className='cursor-pointer' />
             </div>
           </div>
           <div className='my-2'>
             <div>
-              <Icons.PlusCircle className='cursor-pointer' />
+              <Icons.PlusSquare className='cursor-pointer' />
             </div>
           </div>
         </div>

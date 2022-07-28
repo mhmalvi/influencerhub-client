@@ -21,12 +21,14 @@ import { ReactComponent as BorderStock } from "../../assets/Icons/border-strock.
 import { ReactComponent as VerticalBorderStock } from "../../assets/Icons/vertical-border-stoke.svg";
 import { ReactComponent as Clip } from "../../assets/Icons/clip.svg";
 import { ReactComponent as Edit } from "../../assets/Icons/edit-icon.svg";
+import { ReactComponent as PlusSquare } from "../../assets/Icons/plus-square.svg";
 import { ReactComponent as PlusCircle } from "../../assets/Icons/plus-circle.svg";
 import { ReactComponent as DoubleClip } from "../../assets/Icons/double-clip.svg";
 import { ReactComponent as CreateCreatorBorder } from "../../assets/Icons/create-creator-border-stoke.svg";
 import { ReactComponent as Youtube } from "../../assets/Icons/youtube.svg";
 import { ReactComponent as Send } from "../../assets/Icons/send-icon.svg";
 import { ReactComponent as ThreeDots } from "../../assets/Icons/three-dots.svg";
+import { ReactComponent as BottomBorder } from "../../assets/Icons/bottom-border.svg";
 
 const Icons = {
   Facebook,
@@ -52,12 +54,14 @@ const Icons = {
   Clip,
   Edit,
   VerticalBorderStock,
+  PlusSquare,
   PlusCircle,
   DoubleClip,
   CreateCreatorBorder,
   Youtube,
   Send,
   ThreeDots,
+  BottomBorder,
 };
 
 export default Icons;

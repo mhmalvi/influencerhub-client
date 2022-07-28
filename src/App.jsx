@@ -21,6 +21,10 @@ import Signup from "./Pages/Signup";
 import Wallet from "./Pages/Wallets";
 import Academy from "./Pages/Academy";
 import AnimatedCursor from "react-animated-cursor";
+import CaseStudy from "./Pages/Admin/CaseStudy";
+import WorkShowcase from "./Pages/WorkShowcase";
+import Blog from "./Pages/Blog";
+import BlogDetails from "./Pages/Blog/BlogDetails";
 
 function App() {
   return (
@@ -71,6 +75,10 @@ function App() {
         <Route path='wallet' element={<Wallet />} />
         <Route path='admin/campaign-lists' element={<CampaignLists />} />
         <Route path='academy' element={<Academy />} />
+        <Route path='case-study' element={<CaseStudy />} />
+        <Route path='work-showcase' element={<WorkShowcase />} />
+        <Route path='blog' element={<Blog />} />
+        <Route path='blog-details/:id' element={<BlogDetails />} />
       </Routes>
     </div>
   );
