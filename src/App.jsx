@@ -20,28 +20,57 @@ import Settings from "./Pages/Settings";
 import Signup from "./Pages/Signup";
 import Wallet from "./Pages/Wallets";
 import Academy from "./Pages/Academy";
+import AnimatedCursor from "react-animated-cursor";
 
 function App() {
   return (
-    <div className="bg-white">
+    <div className='bg-white'>
+      <AnimatedCursor
+        color='0,0,0'
+        innerSize={10}
+        outerSize={35}
+        innerScale={1}
+        outerScale={1.5}
+        outerAlpha={0}
+        clickables={[
+          "a",
+          'input[type="text"]',
+          'input[type="email"]',
+          'input[type="number"]',
+          'input[type="submit"]',
+          'input[type="image"]',
+          "label[for]",
+          "select",
+          "textarea",
+          "button",
+          ".link",
+        ]}
+        outerStyle={{
+          border: "1px solid #000000",
+          zIndex: "9999",
+        }}
+        innerStyle={{
+          zIndex: "9999",
+        }}
+      />
       <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="login" element={<Login />} />
-        <Route path="signup" element={<Signup />} />
-        <Route path="campaigns" element={<FindCampaigns />} />
-        <Route path="campaign/:id" element={<CampaignDetails />} />
-        <Route path="bid/:id" element={<BiddingForms />} />
-        <Route path="bidders/:id" element={<BiddingList />} />
-        <Route path="creator-dashboard" element={<CreatorsDashboard />} />
-        <Route path="working-campaign/:id" element={<WorkingCampaign />} />
-        <Route path="settings/:username" element={<Settings />} />
-        <Route path="create-campaign" element={<CreateCampain />} />
-        <Route path="completed-campaigns" element={<CompletedCampaigns />} />
-        <Route path="brand-profile" element={<BrandProfile />} />
-        <Route path="creator-profile" element={<CreatorProfile />} />
-        <Route path="wallet" element={<Wallet />} />
-        <Route path="admin/campaign-lists" element={<CampaignLists />} />
-        <Route path="academy" element={<Academy/>} />
+        <Route path='/' element={<LandingPage />} />
+        <Route path='login' element={<Login />} />
+        <Route path='signup' element={<Signup />} />
+        <Route path='campaigns' element={<FindCampaigns />} />
+        <Route path='campaign/:id' element={<CampaignDetails />} />
+        <Route path='bid/:id' element={<BiddingForms />} />
+        <Route path='bidders/:id' element={<BiddingList />} />
+        <Route path='creator-dashboard' element={<CreatorsDashboard />} />
+        <Route path='working-campaign/:id' element={<WorkingCampaign />} />
+        <Route path='settings/:username' element={<Settings />} />
+        <Route path='create-campaign' element={<CreateCampain />} />
+        <Route path='completed-campaigns' element={<CompletedCampaigns />} />
+        <Route path='brand-profile' element={<BrandProfile />} />
+        <Route path='creator-profile' element={<CreatorProfile />} />
+        <Route path='wallet' element={<Wallet />} />
+        <Route path='admin/campaign-lists' element={<CampaignLists />} />
+        <Route path='academy' element={<Academy />} />
       </Routes>
     </div>
   );

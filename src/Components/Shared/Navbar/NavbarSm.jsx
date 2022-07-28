@@ -3,16 +3,23 @@ import { Link } from "react-router-dom";
 import Icons from "../Icons";
 import profilePicture from "../../../assets/Images/profile.png";
 import { Dropdown, Menu } from "antd";
+import NotificationSound from "../../../assets/Sounds/notification.mp3";
 
 const NavbarSm = ({ loggedin }) => {
+  const audio = new Audio(NotificationSound);
+  const start = () => {
+    console.log("Hiii");
+    audio.play();
+  };
+
   const menu = (
     <Menu
-      className="rounded-3xl top-2"
+      className='rounded-3xl top-2'
       items={[
         {
           icon: <Icons.Settings />,
           label: (
-            <Link to={"/"} className="font-mulish leading-5">
+            <Link to={"/"} className='font-mulish leading-5'>
               Account Setting
             </Link>
           ),
@@ -21,7 +28,7 @@ const NavbarSm = ({ loggedin }) => {
         {
           icon: <Icons.User />,
           label: (
-            <Link to={"/"} className="font-mulish leading-5">
+            <Link to={"/"} className='font-mulish leading-5'>
               Profile
             </Link>
           ),
@@ -30,7 +37,7 @@ const NavbarSm = ({ loggedin }) => {
         {
           icon: <Icons.Wallet />,
           label: (
-            <Link to={"/"} className="font-mulish leading-5">
+            <Link to={"/"} className='font-mulish leading-5'>
               Wallet
             </Link>
           ),
@@ -39,7 +46,7 @@ const NavbarSm = ({ loggedin }) => {
         {
           icon: <Icons.LogOut />,
           label: (
-            <Link to={"/"} className="font-mulish leading-5">
+            <Link to={"/"} className='font-mulish leading-5'>
               Log Out
             </Link>
           ),
@@ -104,7 +111,11 @@ const NavbarSm = ({ loggedin }) => {
                 <Link to={"/login"} className='mr-5 cursor-pointer'>
                   <Icons.Mail />
                 </Link>
-                <Link to={"/login"} className='mr-5 cursor-pointer'>
+                <Link
+                  to={"/campaign/1"}
+                  className='mr-5 cursor-pointer'
+                  onClick={() => start()}
+                >
                   <Icons.Notification />
                 </Link>
                 <div className='mr-5 cursor-pointer'>
