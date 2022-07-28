@@ -21,6 +21,7 @@ import Signup from "./Pages/Signup";
 import Wallet from "./Pages/Wallets";
 import Academy from "./Pages/Academy";
 import CaseStudy from "./Pages/Admin/CaseStudy";
+import WorkShowcase from "./Pages/WorkShowcase";
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
         <Route path="admin/campaign-lists" element={<CampaignLists />} />
         <Route path="academy" element={<Academy />} />
         <Route path="case-study" element={<CaseStudy />} />
+        <Route path="work-showcase" element={<WorkShowcase />} />
       </Routes>
     </div>
   );

@@ -397,6 +397,11 @@ input[type="radio"]:checked::after {
   border-radius: 10px;
 }
 
+.work-showcase-banner {
+  width: 19.5rem !important;
+}
+
+
 @keyframes rotation {
   from {
     transform: rotate(0deg);
