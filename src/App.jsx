@@ -26,6 +26,7 @@ import WorkShowcase from "./Pages/WorkShowcase";
 import Blog from "./Pages/Blog";
 import BlogDetails from "./Pages/Blog/BlogDetails";
 import Home from "./Pages/Academy/Home";
+import AcademicVideos from "./Pages/Academy/Videos";
 
 function App() {
   return (
@@ -77,10 +78,11 @@ function App() {
         <Route path='admin/campaign-lists' element={<CampaignLists />} />
         <Route path='academy' element={<Academy />} />
         <Route path='academy/home' element={<Home />} />
+        <Route path='academy/videos' element={<AcademicVideos />} />
         <Route path='case-study' element={<CaseStudy />} />
         <Route path='work-showcase' element={<WorkShowcase />} />
         <Route path='blog' element={<Blog />} />
-        <Route path='blog-details/:id' element={<BlogDetails />} />
+        <Route path='blog/:id' element={<BlogDetails />} />
       </Routes>
     </div>
   );

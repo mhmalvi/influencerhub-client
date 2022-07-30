@@ -9,7 +9,7 @@ import NavbarSm from "../../Components/Shared/Navbar/NavbarSm";
 const WorkShowcase = () => {
   const [visible, setVisible] = useState(false);
   const [videoUrl, setVideoUrl] = useState("");
-  const [socialMedia, setCampaignType] = useState(0);
+  const [socialMedia, setSocialMedia] = useState(0);
   const player = useRef(null);
 
   const socialMediums = [
@@ -76,7 +76,7 @@ const WorkShowcase = () => {
                   className={`cursor-pointer text-sm font-mulish leading-5 mr-2.5 ${
                     socialMedia === type.id ? "font-normal" : "font-light"
                   }`}
-                  onClick={() => setCampaignType(type.id)}
+                  onClick={() => setSocialMedia(type.id)}
                 >
                   {type.title}
                 </div>
