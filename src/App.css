@@ -420,7 +420,19 @@ input[type="radio"]:checked::after {
   border-radius: 50%;
   color: white !important;
   content: url("./assets/Icons/purple-dot.svg") !important;
-  /* background-color: #d100d1; */
+}
+
+.header-wrapper {
+  background-image: url("https://i.ibb.co/tJ6LNb2/Background-OVerlay.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.academy-footer {
+  background-image: url("https://i.ibb.co/mTYwNfx/Rectangle-8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 17.125rem;
 }
 
 @keyframes topBubbles {

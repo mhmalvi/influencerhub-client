@@ -25,6 +25,7 @@ import CaseStudy from "./Pages/Admin/CaseStudy";
 import WorkShowcase from "./Pages/WorkShowcase";
 import Blog from "./Pages/Blog";
 import BlogDetails from "./Pages/Blog/BlogDetails";
+import Home from "./Pages/Academy/Home";
 
 function App() {
   return (
@@ -75,6 +76,7 @@ function App() {
         <Route path='wallet' element={<Wallet />} />
         <Route path='admin/campaign-lists' element={<CampaignLists />} />
         <Route path='academy' element={<Academy />} />
+        <Route path='academy/home' element={<Home />} />
         <Route path='case-study' element={<CaseStudy />} />
         <Route path='work-showcase' element={<WorkShowcase />} />
         <Route path='blog' element={<Blog />} />
