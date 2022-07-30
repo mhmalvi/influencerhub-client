@@ -435,6 +435,31 @@ input[type="radio"]:checked::after {
   height: 17.125rem;
 }
 
+/* Studio page */
+.content-solution {
+  background-image: url(assets/Images/content-solution-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.design-solution {
+  background-image: url(assets/Images/design-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.video-solution {
+  background-image: url(assets/Images/camera-reels-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.event-solution {
+  background-image: url(assets/Images/event-managemen-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @keyframes topBubbles {
   0% {
     background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,

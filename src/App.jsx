@@ -27,6 +27,7 @@ import Blog from "./Pages/Blog";
 import BlogDetails from "./Pages/Blog/BlogDetails";
 import Home from "./Pages/Academy/Home";
 import AcademicVideos from "./Pages/Academy/Videos";
+import Studio from "./Pages/Studio/Home";
 
 function App() {
   return (
@@ -83,6 +84,7 @@ function App() {
         <Route path='work-showcase' element={<WorkShowcase />} />
         <Route path='blog' element={<Blog />} />
         <Route path='blog/:id' element={<BlogDetails />} />
+        <Route path='studio' element={<Studio />} />
       </Routes>
     </div>
   );
