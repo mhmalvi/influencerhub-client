@@ -1,7 +1,6 @@
 import { Modal } from "antd";
 import React, { useRef, useState } from "react";
 import { BigPlayButton, Player } from "video-react";
-import "video-react/dist/video-react.css";
 import vidoPlay from "../../assets/Images/play-circle.png";
 import workShowcaseBanner from "../../assets/Images/work-showcase.png";
 import NavbarSm from "../../Components/Shared/Navbar/NavbarSm";

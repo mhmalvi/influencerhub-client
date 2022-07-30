@@ -10,7 +10,6 @@ const AcademicVideos = () => {
   const [activeOption, setActiveOption] = useState("all");
   const [visible, setVisible] = useState(false);
   const [videoUrl, setVideoUrl] = useState("");
-  const [socialMedia, setSocialMedia] = useState(0);
   const player = useRef(null);
 
   const settingsOptions = [

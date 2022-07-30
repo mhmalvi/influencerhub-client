@@ -2,6 +2,7 @@ import "antd/dist/antd.css";
 import { Route, Routes } from "react-router-dom";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
+import "video-react/dist/video-react.css";
 import "./App.css";
 import CampaignLists from "./Pages/Admin/CampaignLists";
 import FindCampaigns from "./Pages/Campaigns";
