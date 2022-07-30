@@ -29,6 +29,7 @@ import { ReactComponent as Youtube } from "../../assets/Icons/youtube.svg";
 import { ReactComponent as Send } from "../../assets/Icons/send-icon.svg";
 import { ReactComponent as ThreeDots } from "../../assets/Icons/three-dots.svg";
 import { ReactComponent as BottomBorder } from "../../assets/Icons/bottom-border.svg";
+import { ReactComponent as Reply } from "../../assets/Icons/replay-btn.svg";
 
 const Icons = {
   Facebook,
@@ -62,6 +63,7 @@ const Icons = {
   Send,
   ThreeDots,
   BottomBorder,
+  Reply,
 };
 
 export default Icons;

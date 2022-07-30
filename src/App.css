@@ -4,7 +4,6 @@
   padding: 0;
 }
 
-
 .font-pacifico {
   font-family: "Pacifico", cursive;
 }
@@ -122,13 +121,13 @@
 
 /* For Login Page */
 
-.cutom-carousel > .slick-dots li button::before {
+.custom-carousel > .slick-dots li button::before {
   color: white !important;
   opacity: 1 !important;
   content: url("./assets/Icons/carousel-btn.svg") !important;
 }
 
-.cutom-carousel > .slick-dots li.slick-active button:before {
+.custom-carousel > .slick-dots li.slick-active button:before {
   color: white !important;
   background-color: white !important;
   padding: 0 20px;
@@ -138,7 +137,7 @@
   margin-left: -10px;
 }
 
-.cutom-carousel > .slick-dots {
+.custom-carousel > .slick-dots {
   bottom: 1vh !important;
   left: 5px !important;
   width: 30% !important;
@@ -402,6 +401,59 @@ input[type="radio"]:checked::after {
   width: 19.5rem !important;
 }
 
+.blog-custom-carousel > .slick-dots li button {
+  width: 0px;
+  height: 0px;
+  background-color: transparent;
+}
+
+.blog-custom-carousel > .slick-dots li button::before {
+  width: 14.81px;
+  height: 14.81px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.blog-custom-carousel > .slick-dots li.slick-active button:before {
+  width: 14.81px;
+  height: 14.81px;
+  border-radius: 50%;
+  color: white !important;
+  content: url("./assets/Icons/purple-dot.svg") !important;
+  /* background-color: #d100d1; */
+}
+
+@keyframes topBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+@keyframes bottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
 
 @keyframes rotation {
   from {

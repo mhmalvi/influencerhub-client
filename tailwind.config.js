@@ -8,6 +8,7 @@ module.exports = {
         "4.5xl": "2.5rem",
       },
       width: {
+        10.5: "2.625rem",
         13: "3.25rem",
         17: "4.3rem",
         19: "4.5rem",
@@ -32,6 +33,7 @@ module.exports = {
         98: "25.7rem",
       },
       height: {
+        10.5: "2.625rem",
         19: "4.5rem",
         22: "5.5rem",
         25: "6.25rem",
@@ -51,6 +53,7 @@ module.exports = {
       inset: {
         15: "3.65rem",
         22: "5.7rem",
+        30: "7.625rem",
         84: "22rem",
       },
       padding: {
