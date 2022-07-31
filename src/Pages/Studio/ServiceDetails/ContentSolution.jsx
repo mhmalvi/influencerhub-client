@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../../../Components/Shared/Navbar";
 
-const ContentSolution = () => {
+const ContentSolution = ({ title }) => {
   return (
     <div className="page-width mx-auto relative h-screen">
       <div>
@@ -9,7 +9,7 @@ const ContentSolution = () => {
       </div>
       <div className="content-solution mx-auto my-16">
         <div className="text-4.5xl font-abhaya font-bold leading-12 bg-white min-h-full w-88 ml-auto mr-16 flex justify-center items-center">
-          <span>Content Solution</span>
+          <span>{title}</span>
         </div>
       </div>
 

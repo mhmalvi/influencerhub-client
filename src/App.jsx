@@ -87,7 +87,22 @@ function App() {
         <Route path="blog" element={<Blog />} />
         <Route path="blog/:id" element={<BlogDetails />} />
         <Route path="studio" element={<Studio />} />
-        <Route path="studio/content-solution" element={<ContentSolution />} />
+        <Route
+          path="studio/content-solution"
+          element={<ContentSolution title="Content Solution" />}
+        />
+        <Route
+          path="studio/video-solution"
+          element={<ContentSolution title="Video Solution" />}
+        />
+        <Route
+          path="studio/design-solution"
+          element={<ContentSolution title="Design Solution" />}
+        />
+        <Route
+          path="studio/event-solution"
+          element={<ContentSolution title="Event Solution" />}
+        />
       </Routes>
     </div>
   );

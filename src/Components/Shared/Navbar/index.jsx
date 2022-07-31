@@ -1,55 +1,18 @@
+import { Dropdown } from "antd";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Dropdown, Menu } from "antd";
 import profilePicture from "../../../assets/Images/profile.png";
 import Icons from "../Icons";
+import {
+  brandMenu,
+  creatorMenu,
+  insightMenu,
+  profileMenu,
+  studioMenu,
+} from "./Menus";
 
 const Navbar = ({ loggedin }) => {
   const [toggleSignup, setToggleSignup] = useState(false);
-
-  const menu = (
-    <Menu
-      className="rounded-3xl top-2"
-      items={[
-        {
-          icon: <Icons.Settings />,
-          label: (
-            <Link to={"/"} className="font-mulish leading-5">
-              Account Setting
-            </Link>
-          ),
-          key: "0",
-        },
-        {
-          icon: <Icons.User />,
-          label: (
-            <Link to={"/"} className="font-mulish leading-5">
-              Profile
-            </Link>
-          ),
-          key: "1",
-        },
-        {
-          icon: <Icons.Wallet />,
-          label: (
-            <Link to={"/"} className="font-mulish leading-5">
-              Wallet
-            </Link>
-          ),
-          key: "2",
-        },
-        {
-          icon: <Icons.LogOut />,
-          label: (
-            <Link to={"/"} className="font-mulish leading-5">
-              Log Out
-            </Link>
-          ),
-          key: "3",
-        },
-      ]}
-    />
-  );
 
   return (
     <div className="page-width mx-auto px-28 py-14">
@@ -78,11 +41,23 @@ const Navbar = ({ loggedin }) => {
                 </>
               )}
               {!loggedin && (
-                <div className="cursor-pointer">Band & Agencie</div>
+                <Dropdown overlay={brandMenu} trigger={["click"]}>
+                  <div className="cursor-pointer">Band & Agencie</div>
+                </Dropdown>
               )}
-              {!loggedin && <div className="cursor-pointer">Creator</div>}
-              <div className="cursor-pointer">Studio</div>
-              <div className="cursor-pointer">Insight</div>
+              {!loggedin && (
+                <>
+                  <Dropdown overlay={creatorMenu} trigger={["click"]}>
+                    <div className="cursor-pointer">Creator</div>
+                  </Dropdown>
+                </>
+              )}
+              <Dropdown overlay={studioMenu} trigger={["click"]}>
+                <div className="cursor-pointer">Studio</div>
+              </Dropdown>
+              <Dropdown overlay={insightMenu} trigger={["click"]}>
+                <div className="cursor-pointer">Insight</div>
+              </Dropdown>
               {!loggedin && <div className="cursor-pointer">About</div>}
             </div>
             {!loggedin && (
@@ -112,7 +87,7 @@ const Navbar = ({ loggedin }) => {
                   <Icons.Notification />
                 </Link>
                 <Link to={"/find-campaign"} className="cursor-pointer">
-                  <Dropdown overlay={menu} trigger={["click"]}>
+                  <Dropdown overlay={profileMenu} trigger={["click"]}>
                     <img src={profilePicture} alt="avatar" />
                   </Dropdown>
                 </Link>
