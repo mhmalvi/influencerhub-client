@@ -4,6 +4,7 @@ import Icons from "../Icons";
 import profilePicture from "../../../assets/Images/profile.png";
 import { Dropdown, Menu } from "antd";
 import NotificationSound from "../../../assets/Sounds/notification.mp3";
+import { creatorMenu, insightMenu, studioMenu } from "./Menus";
 
 const NavbarSm = ({ loggedin }) => {
   const audio = new Audio(NotificationSound);
@@ -127,12 +128,22 @@ const NavbarSm = ({ loggedin }) => {
               )}
               {!loggedin && (
                 <Dropdown overlay={brandMenu} trigger={["click"]}>
-                  <div className="cursor-pointer mr-2">Band & Agencie</div>
+                  <div className="cursor-pointer">Band & Agencie</div>
                 </Dropdown>
               )}
-              {!loggedin && <div className="cursor-pointer mr-2">Creator</div>}
-              <div className="cursor-pointer mr-2">Studio</div>
-              <div className="cursor-pointer mr-2">Insight</div>
+              {!loggedin && (
+                <>
+                  <Dropdown overlay={creatorMenu} trigger={["click"]}>
+                    <div className="cursor-pointer">Creator</div>
+                  </Dropdown>
+                </>
+              )}
+              <Dropdown overlay={studioMenu} trigger={["click"]}>
+                <div className="cursor-pointer">Studio</div>
+              </Dropdown>
+              <Dropdown overlay={insightMenu} trigger={["click"]}>
+                <div className="cursor-pointer">Insight</div>
+              </Dropdown>
               {!loggedin && <div className="cursor-pointer mr-2">About</div>}
             </div>
             {!loggedin && (
