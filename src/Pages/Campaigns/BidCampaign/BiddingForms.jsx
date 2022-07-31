@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Icons from "../../../Components/Shared/Icons";
 import Modal from "../../../Components/Shared/Modal";
 import NavbarSm from "../../../Components/Shared/Navbar/NavbarSm";
+import { handleBidSuccess } from "../../../Components/utils/sounds";
 
 const BiddingForms = () => {
   const [popUp, setPopUp] = useState(false);
@@ -121,6 +122,7 @@ const BiddingForms = () => {
                 className="w-full py-3 text-base leading-6 font-light bg-dark-blue text-white rounded-lg mx-auto"
                 onClick={() => {
                   setPopUp(true);
+                  handleBidSuccess();
                 }}
               >
                 Bid submit

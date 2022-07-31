@@ -30,6 +30,13 @@ import { ReactComponent as Send } from "../../assets/Icons/send-icon.svg";
 import { ReactComponent as ThreeDots } from "../../assets/Icons/three-dots.svg";
 import { ReactComponent as BottomBorder } from "../../assets/Icons/bottom-border.svg";
 import { ReactComponent as Reply } from "../../assets/Icons/replay-btn.svg";
+import { ReactComponent as HamBurger } from "../../assets/Icons/ham-burger.svg";
+import { ReactComponent as Google } from "../../assets/Icons/google.svg";
+import { ReactComponent as Netflix } from "../../assets/Icons/netflix.svg";
+import { ReactComponent as Airbnb } from "../../assets/Icons/airbnb.svg";
+import { ReactComponent as Amazon } from "../../assets/Icons/amazon.svg";
+import { ReactComponent as FacebookLarge } from "../../assets/Icons/facebook-large.svg";
+import { ReactComponent as Grab } from "../../assets/Icons/grab.svg";
 
 const Icons = {
   Facebook,
@@ -64,6 +71,13 @@ const Icons = {
   ThreeDots,
   BottomBorder,
   Reply,
+  HamBurger,
+  Google,
+  Netflix,
+  Airbnb,
+  Amazon,
+  FacebookLarge,
+  Grab,
 };
 
 export default Icons;

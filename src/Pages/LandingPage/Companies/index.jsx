@@ -24,8 +24,8 @@ const Companies = () => {
           </h1>
         </div>
         <div className="flex justify-center items-center">
-          {companies.map((company) => (
-            <img className="mx-10" src={company} alt="" srcset="" />
+          {companies.map((company, index) => (
+            <img key={index} className="mx-10" src={company} alt="" srcSet="" />
           ))}
         </div>
       </div>

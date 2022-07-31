@@ -5,6 +5,7 @@ import carouselData from "./carouselData.json";
 import google from "../../assets/Images/google-logo.png";
 import facebook from "../../assets/Images/facebook-logo.png";
 import { Link } from "react-router-dom";
+import { handlesignUpSuccessfullAudio } from "../../Components/utils/sounds";
 
 const Signup = () => {
   const [ifBrand, setIfBrand] = useState(true);
@@ -150,6 +151,7 @@ const Signup = () => {
               <button
                 className="w-full text-white font-semibold mx-auto text-base btn-grad bg-dark-blue py-3 mt-4 rounded-lg"
                 type="submit"
+                onClick={handlesignUpSuccessfullAudio}
               >
                 Create Account
               </button>

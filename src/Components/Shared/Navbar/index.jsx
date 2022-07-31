@@ -2,6 +2,7 @@ import { Dropdown } from "antd";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import profilePicture from "../../../assets/Images/profile.png";
+import { handleSignUpAudio } from "../../utils/sounds";
 import Icons from "../Icons";
 import {
   brandMenu,
@@ -71,8 +72,11 @@ const Navbar = ({ loggedin }) => {
                 <Link
                   to={"/signup"}
                   className={`btn-grad text-white hover:text-white px-8 py-3 rounded-full cursor-pointer font-thin font-mulish`}
-                  onMouseOver={() => setToggleSignup(!toggleSignup)}
+                  onMouseOver={() => {
+                    setToggleSignup(!toggleSignup);
+                  }}
                   onMouseOut={() => setToggleSignup(!toggleSignup)}
+                  onClick={handleSignUpAudio}
                 >
                   Sign up
                 </Link>

@@ -3,16 +3,10 @@ import { Link } from "react-router-dom";
 import Icons from "../Icons";
 import profilePicture from "../../../assets/Images/profile.png";
 import { Dropdown, Menu } from "antd";
-import NotificationSound from "../../../assets/Sounds/notification.mp3";
 import { creatorMenu, insightMenu, studioMenu } from "./Menus";
+import { handleNotificationAudio } from "../../utils/sounds";
 
 const NavbarSm = ({ loggedin }) => {
-  const audio = new Audio(NotificationSound);
-  const start = () => {
-    console.log("Hiii");
-    audio.play();
-  };
-
   const brandMenu = (
     <Menu
       className="rounded-3xl top-2"
@@ -170,7 +164,7 @@ const NavbarSm = ({ loggedin }) => {
                 <Link
                   to={"/campaign/1"}
                   className="mr-5 cursor-pointer"
-                  onClick={() => start()}
+                  onClick={() => handleNotificationAudio()}
                 >
                   <Icons.Notification />
                 </Link>

@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import "video-react/dist/video-react.css";
 import "./App.css";
+import { BreakpointProvider } from "react-socks";
 import CampaignLists from "./Pages/Admin/CampaignLists";
 import FindCampaigns from "./Pages/Campaigns";
 import BiddingForms from "./Pages/Campaigns/BidCampaign/BiddingForms";
@@ -62,48 +63,50 @@ function App() {
           zIndex: "9999",
         }}
       />
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="login" element={<Login />} />
-        <Route path="signup" element={<Signup />} />
-        <Route path="campaigns" element={<FindCampaigns />} />
-        <Route path="campaign/:id" element={<CampaignDetails />} />
-        <Route path="bid/:id" element={<BiddingForms />} />
-        <Route path="bidders/:id" element={<BiddingList />} />
-        <Route path="creator-dashboard" element={<CreatorsDashboard />} />
-        <Route path="working-campaign/:id" element={<WorkingCampaign />} />
-        <Route path="settings/:username" element={<Settings />} />
-        <Route path="create-campaign" element={<CreateCampain />} />
-        <Route path="completed-campaigns" element={<CompletedCampaigns />} />
-        <Route path="brand-profile" element={<BrandProfile />} />
-        <Route path="creator-profile" element={<CreatorProfile />} />
-        <Route path="wallet" element={<Wallet />} />
-        <Route path="admin/campaign-lists" element={<CampaignLists />} />
-        <Route path="academy" element={<Academy />} />
-        <Route path="academy/home" element={<Home />} />
-        <Route path="academy/videos" element={<AcademicVideos />} />
-        <Route path="case-study" element={<CaseStudy />} />
-        <Route path="work-showcase" element={<WorkShowcase />} />
-        <Route path="blog" element={<Blog />} />
-        <Route path="blog/:id" element={<BlogDetails />} />
-        <Route path="studio" element={<Studio />} />
-        <Route
-          path="studio/content-solution"
-          element={<ContentSolution title="Content Solution" />}
-        />
-        <Route
-          path="studio/video-solution"
-          element={<ContentSolution title="Video Solution" />}
-        />
-        <Route
-          path="studio/design-solution"
-          element={<ContentSolution title="Design Solution" />}
-        />
-        <Route
-          path="studio/event-solution"
-          element={<ContentSolution title="Event Solution" />}
-        />
-      </Routes>
+      <BreakpointProvider>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="login" element={<Login />} />
+          <Route path="signup" element={<Signup />} />
+          <Route path="campaigns" element={<FindCampaigns />} />
+          <Route path="campaign/:id" element={<CampaignDetails />} />
+          <Route path="bid/:id" element={<BiddingForms />} />
+          <Route path="bidders/:id" element={<BiddingList />} />
+          <Route path="creator-dashboard" element={<CreatorsDashboard />} />
+          <Route path="working-campaign/:id" element={<WorkingCampaign />} />
+          <Route path="settings/:username" element={<Settings />} />
+          <Route path="create-campaign" element={<CreateCampain />} />
+          <Route path="completed-campaigns" element={<CompletedCampaigns />} />
+          <Route path="brand-profile" element={<BrandProfile />} />
+          <Route path="creator-profile" element={<CreatorProfile />} />
+          <Route path="wallet" element={<Wallet />} />
+          <Route path="admin/campaign-lists" element={<CampaignLists />} />
+          <Route path="academy" element={<Academy />} />
+          <Route path="academy/home" element={<Home />} />
+          <Route path="academy/videos" element={<AcademicVideos />} />
+          <Route path="case-study" element={<CaseStudy />} />
+          <Route path="work-showcase" element={<WorkShowcase />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="blog/:id" element={<BlogDetails />} />
+          <Route path="studio" element={<Studio />} />
+          <Route
+            path="studio/content-solution"
+            element={<ContentSolution title="Content Solution" />}
+          />
+          <Route
+            path="studio/video-solution"
+            element={<ContentSolution title="Video Solution" />}
+          />
+          <Route
+            path="studio/design-solution"
+            element={<ContentSolution title="Design Solution" />}
+          />
+          <Route
+            path="studio/event-solution"
+            element={<ContentSolution title="Event Solution" />}
+          />
+        </Routes>
+      </BreakpointProvider>
     </div>
   );
 }

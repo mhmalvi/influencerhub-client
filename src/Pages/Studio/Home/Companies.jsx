@@ -11,7 +11,7 @@ const Companies = () => {
       <div className="w-8/12 mx-auto">
         <div className="flex justify-center items-center">
           {companies.map((company) => (
-            <img className="mx-10" src={company} alt="" srcset="" />
+            <img className="mx-10" src={company} alt="" srcSet="" />
           ))}
         </div>
       </div>
