@@ -29,12 +29,13 @@ import BlogDetails from "./Pages/Blog/BlogDetails";
 import Home from "./Pages/Academy/Home";
 import AcademicVideos from "./Pages/Academy/Videos";
 import Studio from "./Pages/Studio/Home";
+import ContentSolution from "./Pages/Studio/ServiceDetails/ContentSolution";
 
 function App() {
   return (
-    <div className='bg-white'>
+    <div className="bg-white">
       <AnimatedCursor
-        color='0,0,0'
+        color="0,0,0"
         innerSize={10}
         outerSize={40}
         innerScale={1}
@@ -62,30 +63,31 @@ function App() {
         }}
       />
       <Routes>
-        <Route path='/' element={<LandingPage />} />
-        <Route path='login' element={<Login />} />
-        <Route path='signup' element={<Signup />} />
-        <Route path='campaigns' element={<FindCampaigns />} />
-        <Route path='campaign/:id' element={<CampaignDetails />} />
-        <Route path='bid/:id' element={<BiddingForms />} />
-        <Route path='bidders/:id' element={<BiddingList />} />
-        <Route path='creator-dashboard' element={<CreatorsDashboard />} />
-        <Route path='working-campaign/:id' element={<WorkingCampaign />} />
-        <Route path='settings/:username' element={<Settings />} />
-        <Route path='create-campaign' element={<CreateCampain />} />
-        <Route path='completed-campaigns' element={<CompletedCampaigns />} />
-        <Route path='brand-profile' element={<BrandProfile />} />
-        <Route path='creator-profile' element={<CreatorProfile />} />
-        <Route path='wallet' element={<Wallet />} />
-        <Route path='admin/campaign-lists' element={<CampaignLists />} />
-        <Route path='academy' element={<Academy />} />
-        <Route path='academy/home' element={<Home />} />
-        <Route path='academy/videos' element={<AcademicVideos />} />
-        <Route path='case-study' element={<CaseStudy />} />
-        <Route path='work-showcase' element={<WorkShowcase />} />
-        <Route path='blog' element={<Blog />} />
-        <Route path='blog/:id' element={<BlogDetails />} />
-        <Route path='studio' element={<Studio />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="login" element={<Login />} />
+        <Route path="signup" element={<Signup />} />
+        <Route path="campaigns" element={<FindCampaigns />} />
+        <Route path="campaign/:id" element={<CampaignDetails />} />
+        <Route path="bid/:id" element={<BiddingForms />} />
+        <Route path="bidders/:id" element={<BiddingList />} />
+        <Route path="creator-dashboard" element={<CreatorsDashboard />} />
+        <Route path="working-campaign/:id" element={<WorkingCampaign />} />
+        <Route path="settings/:username" element={<Settings />} />
+        <Route path="create-campaign" element={<CreateCampain />} />
+        <Route path="completed-campaigns" element={<CompletedCampaigns />} />
+        <Route path="brand-profile" element={<BrandProfile />} />
+        <Route path="creator-profile" element={<CreatorProfile />} />
+        <Route path="wallet" element={<Wallet />} />
+        <Route path="admin/campaign-lists" element={<CampaignLists />} />
+        <Route path="academy" element={<Academy />} />
+        <Route path="academy/home" element={<Home />} />
+        <Route path="academy/videos" element={<AcademicVideos />} />
+        <Route path="case-study" element={<CaseStudy />} />
+        <Route path="work-showcase" element={<WorkShowcase />} />
+        <Route path="blog" element={<Blog />} />
+        <Route path="blog/:id" element={<BlogDetails />} />
+        <Route path="studio" element={<Studio />} />
+        <Route path="studio/content-solution" element={<ContentSolution />} />
       </Routes>
     </div>
   );

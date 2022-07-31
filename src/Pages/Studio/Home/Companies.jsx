@@ -7,11 +7,11 @@ import amazonLogo from "../../../assets/Images/Amazon-colored.png";
 const Companies = () => {
   const companies = [googleLogo, uberLogo, airbnbLogo, amazonLogo];
   return (
-    <div className='page-width mx-auto pt-32 pb-20'>
-      <div className='w-8/12 mx-auto'>
-        <div className='flex justify-center items-center'>
+    <div className="page-width mx-auto pt-60 pb-20">
+      <div className="w-8/12 mx-auto">
+        <div className="flex justify-center items-center">
           {companies.map((company) => (
-            <img className='mx-10' src={company} alt='' srcset='' />
+            <img className="mx-10" src={company} alt="" srcset="" />
           ))}
         </div>
       </div>
