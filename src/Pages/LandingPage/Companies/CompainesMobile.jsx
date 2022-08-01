@@ -1,60 +1,46 @@
 import React from "react";
 import Slider from "react-slick";
-// import Icons from "../../../Components/Shared/Icons";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import Icons from "../../../Components/Shared/Icons";
 
 const CompainesMobile = () => {
-  // const companies = [
-  //   <Icons.Google />,
-  //   <Icons.Netflix />,
-  //   <Icons.Airbnb />,
-  //   <Icons.Amazon />,
-  //   <Icons.Amazon />,
-  //   <Icons.Grab />,
-  // ];
-
   const settings = {
-    className: "center",
-    centerMode: true,
+    // className: "center",
+    // centerMode: true,
+    // infinite: true,
+    // slidesToShow: 3,
+    // speed: 500,
     infinite: true,
-    centerPadding: "60px",
+    lazyLoad: true,
+    speed: 300,
     slidesToShow: 3,
-    speed: 500,
+    centerMode: true,
+    centerPadding: 0,
+    arrows: false,
   };
 
+  const companies = [
+    { id: 0, icon: <Icons.Netflix className="h-28 px-6 text-gray-400" /> },
+    { id: 1, icon: <Icons.Airbnb className="h-28 px-6 text-gray-400" /> },
+    {
+      id: 2,
+      icon: <Icons.FacebookLarge className="h-28 px-4 text-gray-400" />,
+    },
+    { id: 3, icon: <Icons.Amazon className="h-28 px-6 text-gray-400" /> },
+    { id: 4, icon: <Icons.Grab className="h-24 px-6 text-gray-400" /> },
+  ];
+
   return (
-    <div className="page-width-mobile mx-auto pt-20 pb-20">
-      <div className="w-8/12 mx-auto">
-        <div>
-          <h1 className="text-2.5xl font-bold font-abhaya text-center mb-12 leading-8">
+    <div className="py-20">
+      <div>
+        <div className="w-64 px-2 mx-auto">
+          <h1 className="text-2.5xl font-bold font-abhaya text-center leading-8">
             Trusted by 5,000+ Companies Worldwide
           </h1>
         </div>
-        <Slider {...settings}>
-          {/* <div className="mx-6">
-            <Icons.Netflix />
-          </div>
-          <Icons.Airbnb className="mx-6" />
-          <Icons.Amazon className="mx-6" />
-          <Icons.FacebookLarge className="mx-6" />
-          <Icons.Grab className="mx-6" /> */}
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
+        <Slider className="w-full mx-auto flex items-center" {...settings}>
+          {companies.map((company, id) => company.icon)}
         </Slider>
       </div>
     </div>

@@ -1,6 +1,4 @@
-import React, { useEffect } from "react";
-import playbackVideo from "../../../assets/Images/header-playback.mp4";
-// import headerAudio from "../../../assets/Sounds/landing-header-audio.mp3";
+import React from "react";
 
 const Header = () => {
   return (
