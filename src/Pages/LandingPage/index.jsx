@@ -13,6 +13,10 @@ import NavbarMobile from "../../Components/Shared/Navbar/NavbarMobile";
 import HeaderMobile from "./Header/HeaderMobile";
 import CompainesMobile from "./Companies/CompainesMobile";
 import DemandMarketingMobile from "./DemandMarketing/DemandMarketingMobile";
+import TutorialMobile from "./Tutorial/TutorialMobile";
+import FeedBackMobile from "./FeedBacks/FeedBackMobile";
+import WorkShowcaseMobile from "./WorkShowcase/WorkShowcaseMobile";
+import FooterMobile from "../../Components/Shared/Footer/FooterMobile";
 
 const LandingPage = () => {
   return (
@@ -34,6 +38,10 @@ const LandingPage = () => {
           <HeaderMobile />
           <CompainesMobile />
           <DemandMarketingMobile />
+          <TutorialMobile />
+          <FeedBackMobile />
+          <WorkShowcaseMobile />
+          <FooterMobile />
         </div>
       </Breakpoint>
     </div>

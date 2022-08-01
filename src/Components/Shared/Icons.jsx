@@ -37,6 +37,9 @@ import { ReactComponent as Airbnb } from "../../assets/Icons/airbnb.svg";
 import { ReactComponent as Amazon } from "../../assets/Icons/amazon.svg";
 import { ReactComponent as FacebookLarge } from "../../assets/Icons/facebook-large.svg";
 import { ReactComponent as Grab } from "../../assets/Icons/grab.svg";
+import { ReactComponent as FacebookMidium } from "../../assets/Icons/facebook-mid.svg";
+import { ReactComponent as InstagramMidium } from "../../assets/Icons/instagram-mid.svg";
+import { ReactComponent as TweeterMidium } from "../../assets/Icons/twitter-mid.svg";
 
 const Icons = {
   Facebook,
@@ -78,6 +81,9 @@ const Icons = {
   Amazon,
   FacebookLarge,
   Grab,
+  FacebookMidium,
+  InstagramMidium,
+  TweeterMidium,
 };
 
 export default Icons;

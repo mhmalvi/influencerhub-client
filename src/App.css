@@ -476,6 +476,14 @@ input[type="radio"]:checked::after {
   height: 4.6875rem;
 }
 
+.feedback-card {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
 @keyframes topBubbles {
   0% {
     background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
@@ -533,4 +541,29 @@ input[type="radio"]:checked::after {
 
 .slick-current svg {
   color: black !important;
+}
+
+@media screen and (max-width: 500px) {
+  .feedback-card {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: rgba(51, 51, 51, 0.75);
+  }
+
+  .feedback > .slick-prev {
+    position: absolute !important;
+    top: 80% !important;
+    left: 40% !important;
+    z-index: 999;
+  }
+
+  .feedback > .slick-next {
+    position: absolute !important;
+    top: 80% !important;
+    right: 40% !important;
+    z-index: 999 !important;
+  }
 }

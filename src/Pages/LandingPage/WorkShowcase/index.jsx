@@ -20,7 +20,7 @@ const WorkShowcase = () => {
             </div>
           </div>
         </div>
-        <div className="">
+        <div>
           <div className="w-full flex justify-end items-center mx-auto">
             <div className="h-48 w-28 rounded-xl bg-gray-300 mr-3 "></div>
             <div>
