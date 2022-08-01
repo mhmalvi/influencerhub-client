@@ -32,7 +32,7 @@ const CompainesMobile = () => {
   ];
 
   return (
-    <div className="py-20">
+    <div className="pt-20">
       <div>
         <div className="w-64 px-2 mx-auto">
           <h1 className="text-2.5xl font-bold font-abhaya text-center leading-8">

@@ -12,6 +12,7 @@ import { Breakpoint } from "react-socks";
 import NavbarMobile from "../../Components/Shared/Navbar/NavbarMobile";
 import HeaderMobile from "./Header/HeaderMobile";
 import CompainesMobile from "./Companies/CompainesMobile";
+import DemandMarketingMobile from "./DemandMarketing/DemandMarketingMobile";
 
 const LandingPage = () => {
   return (
@@ -32,6 +33,7 @@ const LandingPage = () => {
           <NavbarMobile />
           <HeaderMobile />
           <CompainesMobile />
+          <DemandMarketingMobile />
         </div>
       </Breakpoint>
     </div>
