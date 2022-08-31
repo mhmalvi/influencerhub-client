@@ -17,7 +17,7 @@ const HeaderMobile = () => {
       </div>
       <div className="mt-5 font-mulish flex flex-col justify-center items-center">
         <button className="text-base bg-dark-blue text-white font-noraml font-mulish leading-6 px-8 py-2.5 rounded-full cursor-pointer border-black border">
-          Brand & Agencie
+          Brand & Agencies
         </button>
         <button className="text-base font-noraml font-mulish leading-6 px-14 py-2.5 rounded-full cursor-pointer  border-black border mt-2.5">
           Creator

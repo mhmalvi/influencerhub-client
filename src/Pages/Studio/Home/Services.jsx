@@ -1,11 +1,17 @@
 import React from "react";
-import contentSolution from "../../../assets/Images/content-solution.png";
+import contentSolution from "../../../assets/Images/content_solution.png";
 import design from "../../../assets/Images/design.png";
 import video from "../../../assets/Images/camera-reels.png";
 import eventManagement from "../../../assets/Images/event-management.png";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Services = () => {
+  const navigate = useNavigate();
+
+  const handleNavigate = (path) => {
+    navigate(path);
+  };
+
   return (
     <div className="page-width mx-auto px-30 py-24 my-1 flex justify-between items-center">
       <div className="w-98 pr-10">
@@ -28,10 +34,12 @@ const Services = () => {
             className="w-59 bg-white py-7 rounded"
             style={{
               borderRadius: "40px",
+              zIndex: "99999",
               boxShadow: "0px 10px 50px rgba(0, 0, 0, 0.05)",
             }}
+            onClick={() => handleNavigate("content-solution")}
           >
-            <div className="w-23 h-23 content-solution flex justify-center items-center mx-auto">
+            <div className="w-23 h-23 flex justify-center items-center mx-auto">
               <img src={contentSolution} alt="" />
             </div>
             <h4 className="text-2xl font-normal leading-8 font-mulish text-center mx-18">
@@ -41,24 +49,25 @@ const Services = () => {
               We build readymade websites, mobile
             </p>
           </div>
-          <Link
+
+          <div
             className="w-59 bg-white py-7 rounded mt-6"
             style={{
               borderRadius: "40px",
               boxShadow: "0px 10px 50px rgba(0, 0, 0, 0.05)",
             }}
-            to={"studio/design-solution"}
+            onClick={() => handleNavigate("video-solution")}
           >
             <div className="w-23 h-23 design-solution flex justify-center items-center mx-auto">
               <img src={design} alt="" />
             </div>
             <h4 className="text-2xl font-normal leading-8 font-mulish text-center mx-18">
-              Content Solution
+              Video Solution
             </h4>
             <p className="text-base font-light leading-5 font-mulish text-center mx-6 mb-0">
               We build readymade websites, mobile
             </p>
-          </Link>
+          </div>
         </div>
 
         <div>
@@ -68,29 +77,32 @@ const Services = () => {
               borderRadius: "40px",
               boxShadow: "0px 10px 50px rgba(0, 0, 0, 0.05)",
             }}
+            onClick={() => handleNavigate("design-solution")}
           >
             <div className="w-23 h-23 video-solution flex justify-center items-center mx-auto">
               <img src={video} alt="" />
             </div>
             <h4 className="text-2xl font-normal leading-8 font-mulish text-center mx-18">
-              Content Solution
+              Design Solution
             </h4>
             <p className="text-base font-light leading-5 font-mulish text-center mx-6 mb-0">
               We build readymade websites, mobile
             </p>
           </div>
+
           <div
             className="w-59 bg-white py-7 rounded mt-6"
             style={{
               borderRadius: "40px",
               boxShadow: "0px 10px 50px rgba(0, 0, 0, 0.05)",
             }}
+            onClick={() => handleNavigate("event-solution")}
           >
             <div className="w-23 h-23 event-solution flex justify-center items-center mx-auto">
               <img src={eventManagement} alt="" />
             </div>
             <h4 className="text-2xl font-normal leading-8 font-mulish text-center mx-18">
-              Content Solution
+              Event Management
             </h4>
             <p className="text-base font-light leading-5 font-mulish text-center mx-6 mb-0">
               We build readymade websites, mobile

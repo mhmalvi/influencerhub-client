@@ -122,7 +122,7 @@ const NavbarSm = ({ loggedin }) => {
               )}
               {!loggedin && (
                 <Dropdown overlay={brandMenu} trigger={["click"]}>
-                  <div className="cursor-pointer">Band & Agencie</div>
+                  <div className="cursor-pointer">Brand & Agencies</div>
                 </Dropdown>
               )}
               {!loggedin && (

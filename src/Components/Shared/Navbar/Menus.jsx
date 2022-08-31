@@ -8,7 +8,7 @@ export const brandMenu = (
     items={[
       {
         label: (
-          <Link to={"/"} className="font-mulish leading-5">
+          <Link to={"/brand-profile"} className="font-mulish leading-5">
             Profile
           </Link>
         ),
@@ -16,7 +16,7 @@ export const brandMenu = (
       },
       {
         label: (
-          <Link to={"/"} className="font-mulish leading-5">
+          <Link to={"/brand-profile"} className="font-mulish leading-5">
             Dashboard
           </Link>
         ),
@@ -39,7 +39,7 @@ export const creatorMenu = (
     items={[
       {
         label: (
-          <Link to={"/"} className="font-mulish leading-5">
+          <Link to={"/creator-profile"} className="font-mulish leading-5">
             Profile
           </Link>
         ),
@@ -47,7 +47,7 @@ export const creatorMenu = (
       },
       {
         label: (
-          <Link to={"/"} className="font-mulish leading-5">
+          <Link to={"/creator-dashboard"} className="font-mulish leading-5">
             Dashboard
           </Link>
         ),
@@ -167,7 +167,7 @@ export const profileMenu = (
       {
         icon: <Icons.User />,
         label: (
-          <Link to={"/"} className="font-mulish leading-5">
+          <Link to={"/creator-profile"} className="font-mulish leading-5">
             Profile
           </Link>
         ),
@@ -176,7 +176,7 @@ export const profileMenu = (
       {
         icon: <Icons.Wallet />,
         label: (
-          <Link to={"/"} className="font-mulish leading-5">
+          <Link to={"/wallet"} className="font-mulish leading-5">
             Wallet
           </Link>
         ),

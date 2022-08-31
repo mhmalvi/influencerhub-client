@@ -20,7 +20,7 @@ const Header = () => {
           </div>
           <div className="mt-9 font-mulish">
             <button className="text-base font-noraml font-mulish px-8 py-2.5 rounded-full cursor-pointer border-black border mr-6">
-              Brand & Agencie
+              Brand & Agencies
             </button>
             <button className="text-base font-noraml font-mulish px-14 py-2.5 rounded-full cursor-pointer  border-black border">
               Creator

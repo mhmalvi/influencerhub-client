@@ -8,8 +8,7 @@ import {
   brandMenu,
   creatorMenu,
   insightMenu,
-  profileMenu,
-  studioMenu,
+  profileMenu
 } from "./Menus";
 
 const Navbar = ({ loggedin }) => {
@@ -43,7 +42,7 @@ const Navbar = ({ loggedin }) => {
               )}
               {!loggedin && (
                 <Dropdown overlay={brandMenu} trigger={["click"]}>
-                  <div className="cursor-pointer">Band & Agencie</div>
+                  <div className="cursor-pointer">Brand & Agencies</div>
                 </Dropdown>
               )}
               {!loggedin && (
@@ -53,9 +52,14 @@ const Navbar = ({ loggedin }) => {
                   </Dropdown>
                 </>
               )}
-              <Dropdown overlay={studioMenu} trigger={["click"]}>
-                <div className="cursor-pointer">Studio</div>
-              </Dropdown>
+              {/* <Dropdown overlay={studioMenu} trigger={["click"]}> */}
+              <Link
+                to={"/studio"}
+                className="cursor-pointer text-black hover:text-black"
+              >
+                Studio
+              </Link>
+              {/* </Dropdown> */}
               <Dropdown overlay={insightMenu} trigger={["click"]}>
                 <div className="cursor-pointer">Insight</div>
               </Dropdown>
