@@ -17,20 +17,37 @@ import TutorialMobile from "./Tutorial/TutorialMobile";
 import FeedBackMobile from "./FeedBacks/FeedBackMobile";
 import WorkShowcaseMobile from "./WorkShowcase/WorkShowcaseMobile";
 import FooterMobile from "../../Components/Shared/Footer/FooterMobile";
+import headerBg from "../../assets/Images/landing_header_bg.png";
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className="relative">
       <Breakpoint large up>
-        <Navbar />
-        <Header />
-        <Companies />
-        <DemandMarketing />
-        <Tutorial />
-        <FeedBacks />
-        <WorkShowcase />
-        <Footer />
-        <ScrollToTop />
+        <div
+          style={{
+            zIndex: 99999,
+          }}
+        >
+          <div className="header-bg">
+            <Navbar />
+            <Header />
+          </div>
+          <Companies />
+          <DemandMarketing />
+          <Tutorial />
+          <FeedBacks />
+          <WorkShowcase />
+          <Footer />
+          <ScrollToTop />
+        </div>
+        {/* <img
+          className="w-full absolute top-0"
+          style={{
+            zIndex: 1,
+          }}
+          src={headerBg}
+          alt=""
+        /> */}
       </Breakpoint>
       <Breakpoint small down>
         <div className="mobile-landingpage-bg">
