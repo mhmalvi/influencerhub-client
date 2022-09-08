@@ -31,14 +31,15 @@ import Home from "./Pages/Academy/Home";
 import AcademicVideos from "./Pages/Academy/Videos";
 import Studio from "./Pages/Studio/Home";
 import ContentSolution from "./Pages/Studio/ServiceDetails/ContentSolution";
+import { themeSelector } from "./Components/utils/selector";
 
 function App() {
   return (
-    <div className="bg-white">
+    <div className={`${themeSelector}-bg ${themeSelector}-text`}>
       <AnimatedCursor
-        color="0,0,0"
+        color="255,255,255"
         innerSize={10}
-        outerSize={40}
+        outerSize={30}
         innerScale={1}
         outerScale={1.8}
         outerAlpha={0}
@@ -56,7 +57,7 @@ function App() {
           ".link",
         ]}
         outerStyle={{
-          border: "1px solid #000000",
+          border: "1.5px solid #ffffff",
           zIndex: "9999",
         }}
         innerStyle={{

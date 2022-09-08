@@ -108,13 +108,13 @@ const NavbarSm = ({ loggedin }) => {
                 <>
                   <Link
                     to={"/campaigns"}
-                    className="cursor-pointer mr-2 text-black hover:text-black"
+                    className="cursor-pointer mr-2"
                   >
                     Find Camping
                   </Link>
                   <Link
                     to={"/creator-dashboard"}
-                    className="cursor-pointer mr-2 text-black hover:text-black"
+                    className="cursor-pointer mr-2"
                   >
                     Dashboard
                   </Link>
@@ -144,7 +144,7 @@ const NavbarSm = ({ loggedin }) => {
               <div className="flex justify-center items-center">
                 <Link
                   to={"/login"}
-                  className="mr-5 cursor-pointer text-black hover:text-black"
+                  className="mr-5 cursor-pointer"
                 >
                   Login
                 </Link>

@@ -4,6 +4,9 @@ import Icons from "../Icons";
 
 export const brandMenu = (
   <Menu
+    style={{
+      backgroundColor: "black !important",
+    }}
     className="rounded-3xl top-2"
     items={[
       {

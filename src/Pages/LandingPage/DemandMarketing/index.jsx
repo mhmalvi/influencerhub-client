@@ -1,10 +1,13 @@
 import React from "react";
+import { themeSelector } from "../../../Components/utils/selector";
 
 const DemandMarketing = () => {
   return (
-    <div className="page-width mx-auto my-16">
-      <div className="mb-20 w-7/12 mx-auto">
-        <h1 className="text-4.5xl font-bold font-abhaya text-center px-28 mb-4 leading-12">
+    <div
+      className={`page-width mx-auto py-16 ${themeSelector}-text ${themeSelector}-bg`}
+    >
+      <div className={`mb-20 w-7/12 mx-auto  ${themeSelector}-text`}>
+        <h1 className="text-4.5xl font-bold font-abhaya text-center text-inherit px-28 mb-4 leading-12">
           The importance and demand of influencer marketing
         </h1>
         <p className="mt-4 px-16 text-center font-mulish font-light 2xl:px-20 ">

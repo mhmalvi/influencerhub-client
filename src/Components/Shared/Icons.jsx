@@ -1,3 +1,4 @@
+import { ReactComponent as BrandLogo } from "../../assets/Icons/imf_logo.svg";
 import { ReactComponent as Facebook } from "../../assets/Icons/facebook.svg";
 import { ReactComponent as Instagram } from "../../assets/Icons/instagram.svg";
 import { ReactComponent as Twiteter } from "../../assets/Icons/twitter.svg";
@@ -42,6 +43,7 @@ import { ReactComponent as InstagramMidium } from "../../assets/Icons/instagram-
 import { ReactComponent as TweeterMidium } from "../../assets/Icons/twitter-mid.svg";
 
 const Icons = {
+  BrandLogo,
   Facebook,
   Instagram,
   Twiteter,

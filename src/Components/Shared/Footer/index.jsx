@@ -4,7 +4,7 @@ import Icons from "../Icons";
 const Footer = () => {
   return (
     <div className="page-width mt-28 mb-10 mx-auto">
-      <div className="w-10/12 mx-auto text-black md:py-4">
+      <div className="w-10/12 mx-auto md:py-4">
         {/* <div className="container-fluid grid grid-cols-1 md:grid-cols-4"> */}
         <div className="flex justify-evenly items-start">
           <div className="mt-5">
@@ -27,7 +27,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="mt-5 mx-auto font-mulish">
-            <h4 className="text-black font-semibold mb-6">Services</h4>
+            <h4 className="font-semibold mb-6">Services</h4>
             <div className="grid grid-cols-4 md:grid-cols-1  gap-6 float-left">
               <div href="/" className="mb-1">
                 Services
@@ -45,7 +45,7 @@ const Footer = () => {
           </div>
 
           <div className="mt-5 mx-auto font-mulish">
-            <h4 className="text-black font-semibold mb-6">Services</h4>
+            <h4 className="font-semibold mb-6">Services</h4>
             <div className="grid grid-cols-4 md:grid-cols-1 gap-6 float-left">
               <div href="/" className="mb-1">
                 Services
@@ -63,7 +63,7 @@ const Footer = () => {
           </div>
 
           <div className="mt-5 mx-auto font-mulish">
-            <h4 className="text-black font-semibold mb-6">About</h4>
+            <h4 className="font-semibold mb-6">About</h4>
             <div className="grid grid-cols-4 md:grid-cols-1 gap-6 float-left">
               <div href="/" className="mb-1">
                 Services

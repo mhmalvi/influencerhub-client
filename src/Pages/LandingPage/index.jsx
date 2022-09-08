@@ -1,27 +1,28 @@
 import React from "react";
-import Companies from "./Companies";
-import DemandMarketing from "./DemandMarketing";
-import Header from "./Header";
-import Tutorial from "./Tutorial";
-import FeedBacks from "./FeedBacks";
-import WorkShowcase from "./WorkShowcase";
-import Navbar from "../../Components/Shared/Navbar";
-import Footer from "../../Components/Shared/Footer";
-import ScrollToTop from "../../Components/Shared/ScrollToTop";
 import { Breakpoint } from "react-socks";
-import NavbarMobile from "../../Components/Shared/Navbar/NavbarMobile";
-import HeaderMobile from "./Header/HeaderMobile";
-import CompainesMobile from "./Companies/CompainesMobile";
-import DemandMarketingMobile from "./DemandMarketing/DemandMarketingMobile";
-import TutorialMobile from "./Tutorial/TutorialMobile";
-import FeedBackMobile from "./FeedBacks/FeedBackMobile";
-import WorkShowcaseMobile from "./WorkShowcase/WorkShowcaseMobile";
+import Footer from "../../Components/Shared/Footer";
 import FooterMobile from "../../Components/Shared/Footer/FooterMobile";
-import headerBg from "../../assets/Images/landing_header_bg.png";
+import Navbar from "../../Components/Shared/Navbar";
+import NavbarMobile from "../../Components/Shared/Navbar/NavbarMobile";
+import ScrollToTop from "../../Components/Shared/ScrollToTop";
+import { themeSelector } from "../../Components/utils/selector";
+import CampaignSuccesses from "./CampaignSuccesses";
+import Companies from "./Companies";
+import CompainesMobile from "./Companies/CompainesMobile";
+import DemandMarketing from "./DemandMarketing";
+import DemandMarketingMobile from "./DemandMarketing/DemandMarketingMobile";
+import FeedBacks from "./FeedBacks";
+import FeedBackMobile from "./FeedBacks/FeedBackMobile";
+import HeaderMobile from "./Header/HeaderMobile";
+import NewHeader from "./Header/NewHeader";
+import Tutorial from "./Tutorial";
+import TutorialMobile from "./Tutorial/TutorialMobile";
+import WorkShowcase from "./WorkShowcase";
+import WorkShowcaseMobile from "./WorkShowcase/WorkShowcaseMobile";
 
 const LandingPage = () => {
   return (
-    <div className="relative">
+    <div className={`relative ${themeSelector}-bg`}>
       <Breakpoint large up>
         <div
           style={{
@@ -30,9 +31,11 @@ const LandingPage = () => {
         >
           <div className="header-bg">
             <Navbar />
-            <Header />
+            <NewHeader />
+            {/* <Header /> */}
+            <Companies />
           </div>
-          <Companies />
+          <CampaignSuccesses />
           <DemandMarketing />
           <Tutorial />
           <FeedBacks />

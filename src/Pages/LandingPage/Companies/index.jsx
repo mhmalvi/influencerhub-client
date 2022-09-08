@@ -1,31 +1,19 @@
 import React from "react";
-import googleLogo from "../../../assets/Images/google.png";
-import netflixLogo from "../../../assets/Images/netflix.png";
-import airbnbLogo from "../../../assets/Images/airbnb.png";
-import amazonLogo from "../../../assets/Images/amazon.png";
-import facebookLogo from "../../../assets/Images/facebook.png";
-import grabLogo from "../../../assets/Images/grab-logo.png";
+import metaMask from "../../../assets/Images/MetaMask.png";
+import trustWallet from "../../../assets/Images/trust_wallet.png";
+import walletConnect from "../../../assets/Images/wallet_connect.png";
+import exodus from "../../../assets/Images/Exodus.png";
+import safepal from "../../../assets/Images/safepal.png";
+// import grabLogo from "../../../assets/Images/grab-logo.png";
 
 const Companies = () => {
-  const companies = [
-    googleLogo,
-    netflixLogo,
-    airbnbLogo,
-    amazonLogo,
-    facebookLogo,
-    grabLogo,
-  ];
+  const companies = [metaMask, trustWallet, walletConnect, exodus, safepal];
   return (
     <div className="page-width mx-auto pb-20">
-      <div className="w-8/12 mx-auto">
-        <div>
-          <h1 className="text-4.5xl font-bold font-abhaya text-center mb-12 leading-12">
-            Trusted by 5,000+ Companies Worldwide
-          </h1>
-        </div>
-        <div className="flex justify-center items-center">
-          {companies.map((company, index) => (
-            <img key={index} className="mx-10" src={company} alt="" srcSet="" />
+      <div className="w-full">
+        <div className="flex flex-wrap gap-x-28 gap-y-12 justify-center items-center">
+          {companies.map((company, i) => (
+            <img key={i} className="pb-0.5" src={company} alt="" srcSet="" />
           ))}
         </div>
       </div>
