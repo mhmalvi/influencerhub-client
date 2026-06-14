@@ -1,6 +1,8 @@
 <!-- repo-card -->
 ![influencerhub-client](docs/assets/social-card.png)
 
+![influencerhub-client — architecture](docs/assets/architecture.png)
+
 # InfluencerHub Client
 
 A React-based frontend application for the InfluencerHub platform, providing an interactive interface for managing influencer profiles, campaigns, and analytics. Features a polished UI with animated interactions and responsive data visualizations.
